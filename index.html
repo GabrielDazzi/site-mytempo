@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="src/img/logo-escuro.png" alt="Logo" class="logo11">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato" id="contact-link">Contato</a></li>
+                <li><a href="https://mytempo.esp.br/">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Aqui é onde você encontra tudo o que precisa.</p>
+        <button onclick="scrollToSection('sobre')" class="SM-button">Saiba Mais</button>
+    </section>
+
+    <section id="sobre" class="container">
+        <div class="content1">    
+            <h2>Sobre Nós</h2>
+            <p class="p-content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis fuga a facere ut voluptatum facilis totam veniam aliquid illo itaque sint, commodi, obcaecati quaerat quae nisi vero harum. Sapiente.</p>
+            <img src="/src/img/temp1.jpg" class="img1" alt="Sobre Imagem">
+        </div>
+    </section>
+
+    <section id="servicos" class="content0">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Serviço 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum eius, ipsa, quia consectetur quibusdam incidunt laborum dolore ut iusto perferendis impedit illum at? Molestias modi laboriosam numquam. Fugit, quasi nobis.</p>
+            </div>
+            <div class="service">
+                <h3>Serviço 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quod maxime, necessitatibus dolorem quisquam architecto vel vero non iusto quos. Laborum asperiores magnam itaque reprehenderit quibusdam quae fugit expedita quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos voluptatem vero error sit sed ut mollitia, provident perferendis consectetur enim eveniet debitis tenetur fugiat, eius quidem obcaecati dolor pariatur.</p>
+            </div>
+            <div class="service">
+                <h3>Serviço 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A perferendis animi facilis excepturi quidem aspernatur quaerat labore quo asperiores dolor officiis, atque, aperiam explicabo sequi sed repudiandae distinctio consectetur cupiditate.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contents">
+            <h2>Nossos Parceiros</h2>
+            <div class="parceiros">
+                <div class="parceiro">
+                    <h3>Parceiro 1</h3>
+                    <img src="src/img/logo1.png" alt="Parceiro 1 Logo">
+                </div>
+                <div class="parceiro">
+                    <h3>Parceiro 2</h3>
+                    <img src="src/img/logo1.png" alt="Parceiro 2 Logo">
+                </div>
+                <div class="parceiro">
+                    <h3>Parceiro 3</h3>
+                    <img src="src/img/logo1.png" alt="Parceiro 3 Logo">
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d236.17336106307081!2d-39.85938466008011!3d-18.71894361464686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xca0d7768145c41%3A0xe28078316f888927!2sROCHA%20ATENDIMENTOS!5e0!3m2!1sen!2sbr!4v1725548740512!5m2!1sen!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <button class="contact-btn">📞</button>
+    <div id="contact-modal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Informações de Contato</h2>
+            <p>Email: contato@meusite.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </div>
+    </div>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
