@@ -189,7 +189,7 @@ nav ul li a:hover {
     }
 
     .hero {
-        background-image: url('/src/img/background-temp-retrato.jpg');
+        background-image: url('/src/img/background-temp-retrato.jpg'); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

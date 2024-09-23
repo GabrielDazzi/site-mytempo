@@ -491,6 +491,8 @@ footer p {
     .content1 {
         padding: 40px 20px;
         margin: 30px auto;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .services {
@@ -536,6 +538,8 @@ footer p {
 
     .content1 {
         padding: 30px 15px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .services {
@@ -549,7 +553,7 @@ footer p {
     }
 
     .logo11 {
-        height: 28px;
+        height: 32px;
         margin-right: 5px; 
     }
 
@@ -561,5 +565,23 @@ footer p {
         flex-direction: column; 
         margin-top: 300px;
         margin-right: 10px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 3px;
+
+        
+    }
+
+    nav ul li a:hover {
+        font-size: 17px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        transform: translateY(-3px);
     }
 }
