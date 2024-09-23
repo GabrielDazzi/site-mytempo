@@ -467,3 +467,71 @@ footer p {
         margin-right: 5px; 
     }
 }
+
+.titulo-map {
+    text-align: center;
+    margin: 130px 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.mapa-legenda {
+    display: flex; 
+    align-items: flex-start; 
+}
+
+#mapa-brasil {
+    margin-right: 20px; 
+}
+
+#mapa-brasil img {
+    width: 120%; 
+}
+
+.ul-map {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 300px;
+}
+
+#li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.andre::before,
+.elson::before,
+.mytempo::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.andre::before {
+    background-color: #EE243D;
+}
+
+.elson::before {
+    background-color: #0C506D;
+}
+
+.mytempo::before {
+    background-color: #0C142C;
+}
