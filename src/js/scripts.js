@@ -94,7 +94,7 @@ adjustTopbar();
 
 window.addEventListener('scroll', adjustTopbar);
 
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       
@@ -104,3 +104,4 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
       });
     });
   });
+  
