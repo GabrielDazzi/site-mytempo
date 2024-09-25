@@ -101,7 +101,11 @@ nav ul li a:hover {
 }
 
 body {
-    background-color: #001f3f;
+    background-image: url('/src/img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     color: #fff;
     margin: 0;
