@@ -105,3 +105,31 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", function() {
+    const iconBoxes = document.querySelectorAll('.icon-box');
+    const imgBoxes = document.querySelectorAll('.img-box');
+
+    function adjustLayout() {
+        if (window.innerWidth < 768) {
+            iconBoxes.forEach((box, index) => {
+                if (imgBoxes[index]) {
+                    box.parentNode.appendChild(imgBoxes[index]);
+                }
+            });
+        }
+    }
+
+    adjustLayout(); // Chama a função no carregamento da página
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+            // Caso a tela seja maior ou igual a 768, mantenha a ordem original
+            iconBoxes.forEach((box, index) => {
+                if (imgBoxes[index]) {
+                    box.parentNode.insertBefore(imgBoxes[index], box);
+                }
+            });
+        } else {
+            adjustLayout(); // Reajusta em telas menores
+        }
+    });
+});
