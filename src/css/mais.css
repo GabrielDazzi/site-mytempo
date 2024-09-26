@@ -151,9 +151,9 @@ footer p {
     }
 
     body {
-        background-attachment: scroll; 
-        background-size: cover; 
-        background-position: center top; 
+        height: 30vh !important;
+        min-height: unset !important;
+        background-attachment: fixed;
     }
 
     nav ul {
