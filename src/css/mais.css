@@ -213,6 +213,12 @@ footer p {
         right: 10px;
     }
 
+    body {
+        height: 30vh !important;
+        min-height: unset !important;
+        background-attachment: fixed;
+    }
+
     .icon-box {
         padding: 10px;
     }
