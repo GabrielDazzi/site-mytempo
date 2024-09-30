@@ -78,7 +78,7 @@ window.addEventListener('load', checkVisibility);
 // Ajusta a cor da topbar com base na rolagem da página
 function adjustTopbar() {
     var topbar = document.querySelector('header');
-    var navMenu = document.querySelector('.nav-menu'); // Altere '.nav-menu' para o seletor correto, se necessário
+    var navMenu = document.querySelector('.nav-menu');
     var scrollPosition = window.scrollY;
 
     if (scrollPosition === 0) {
