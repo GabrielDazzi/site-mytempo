@@ -78,19 +78,25 @@ window.addEventListener('load', checkVisibility);
 // Ajusta a cor da topbar com base na rolagem da página
 function adjustTopbar() {
     var topbar = document.querySelector('header');
-    var navMenu = document.querySelector('.nav-menu');
+    var navMenu = document.querySelector('.nav-menu'); 
     var scrollPosition = window.scrollY;
+    var isMobile = window.innerWidth <= 768;
 
     if (scrollPosition === 0) {
         // Quando no topo, aplica a cor da imagem ou transparente
         topbar.style.backgroundColor = "transparent";
-        navMenu.style.backgroundColor = "transparent"; // Fica transparente quando no topo
+        if (isMobile) {
+            navMenu.style.backgroundColor = "transparent"; // Fica transparente no mobile
+        }
     } else {
         // Rolando para baixo, muda para a cor desejada
         topbar.style.backgroundColor = "#3C8DBC"; // Cor atual quando rola a página
-        navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu de navegação
+        if (isMobile) {
+            navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu no mobile
+        }
     }
 }
+
 
 
 // Configura o estado inicial da topbar
