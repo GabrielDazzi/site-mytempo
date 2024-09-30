@@ -72,6 +72,16 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
 .SM-button {
     border-radius: 5px;
     text-decoration: none;
@@ -97,7 +107,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #96b2c5;
+    color: #ffffff;
     background-image: url('/src/img/bk2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -466,13 +476,43 @@ footer p {
         background-position: center;
     } 
 
-    nav ul {
-        gap: 10px;
+    .hamburger-menu {
+        display: block;
     }
 
-    nav ul li a {
-        font-size: 16px;
-        padding: 5px;
+    .nav-menu {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #3C8DBC; 
+    }
+    
+    .nav-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 24px;
+    }
+
+    .nav-menu ul li {
+        opacity: 0; 
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .nav-menu.active ul li {
+        opacity: 1; 
+    }
+
+    .nav-menu ul li a {
+        transform: translateY(-20px); 
+        transition: transform 0.5s ease-in-out; 
+    }
+
+    .nav-menu.active ul li a {
+        transform: translateY(0); 
     }
 
     .hero h1 {

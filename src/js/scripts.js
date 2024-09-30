@@ -78,16 +78,20 @@ window.addEventListener('load', checkVisibility);
 // Ajusta a cor da topbar com base na rolagem da página
 function adjustTopbar() {
     var topbar = document.querySelector('header');
+    var navMenu = document.querySelector('.nav-menu'); // Altere '.nav-menu' para o seletor correto, se necessário
     var scrollPosition = window.scrollY;
 
     if (scrollPosition === 0) {
         // Quando no topo, aplica a cor da imagem ou transparente
         topbar.style.backgroundColor = "transparent";
+        navMenu.style.backgroundColor = "transparent"; // Fica transparente quando no topo
     } else {
         // Rolando para baixo, muda para a cor desejada
-        topbar.style.backgroundColor = "#3C8DBC"; // cor atual quando rola a página
+        topbar.style.backgroundColor = "#3C8DBC"; // Cor atual quando rola a página
+        navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu de navegação
     }
 }
+
 
 // Configura o estado inicial da topbar
 adjustTopbar();
@@ -96,16 +100,16 @@ window.addEventListener('scroll', adjustTopbar);
 
 document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href');
-      document.querySelector(targetId).scrollIntoView({
-        behavior: 'smooth'
-      });
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-  });
-  
-  document.addEventListener("DOMContentLoaded", function() {
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
 
@@ -132,4 +136,13 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
             adjustLayout(); // Reajusta em telas menores
         }
     });
+});
+
+// Hamburger Menu Functionality
+const menuToggle = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+// Toggle the 'active' class to trigger animations
+menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
 });
