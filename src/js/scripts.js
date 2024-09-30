@@ -97,8 +97,6 @@ function adjustTopbar() {
     }
 }
 
-
-
 // Configura o estado inicial da topbar
 adjustTopbar();
 
