@@ -129,6 +129,15 @@ nav ul li a:hover {
     animation: fadeInUp 1s 0.5s forwards;
 }
 
+.hero-text {
+    background-color: #8b8b8b81;
+    border-style: unset;
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    animation: fadeInUp 1s forwards;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -513,6 +522,10 @@ footer p {
 
     .nav-menu.active ul li a {
         transform: translateY(0); 
+    }
+
+    .hero-text {
+        background-color: #0c506d00;
     }
 
     .hero h1 {
