@@ -86,7 +86,7 @@ nav ul li a:hover {
 
 .hamburger span {
     height: 3px;
-    width: 25px;
+    width: 28px;
     background-color: white;
     margin: 4px;
     transition: 0.3s;
@@ -472,6 +472,10 @@ footer p {
     margin: 130px 0 20px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.O {
+    height: 40px;
 }
 
 @keyframes slideIn {
