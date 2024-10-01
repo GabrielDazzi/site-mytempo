@@ -1,15 +1,58 @@
+// Função para ajustar a cor da topbar com base na rolagem da página
+function adjustTopbar() {
+    const topbar = document.querySelector('header');
+    const navMenu = document.querySelector('.nav-menu'); 
+    const burgerMenu = document.querySelector('.burger-menu'); // Seleciona o menu hambúrguer
+    const scrollPosition = window.scrollY;
+    const isMobile = window.innerWidth <= 768;
+
+    if (topbar) {
+        if (scrollPosition === 0) {
+            // Quando no topo, aplica a cor transparente
+            topbar.style.backgroundColor = "transparent";
+            
+            // Deixa o menu hambúrguer invisível no topo
+            if (burgerMenu) {
+                burgerMenu.style.opacity = 0; // Torna invisível
+            }
+
+            if (isMobile && navMenu) {
+                navMenu.style.backgroundColor = "transparent"; // Fica transparente no mobile
+            }
+        } else {
+            // Rolando para baixo, muda para a cor desejada
+            topbar.style.backgroundColor = "#3C8DBC"; // Cor atual quando rola a página
+            
+            // Traz o menu hambúrguer de volta com a cor original
+            if (burgerMenu) {
+                burgerMenu.style.opacity = 1; // Torna visível novamente
+                burgerMenu.style.transition = "opacity 0.3s"; // Adiciona uma transição suave
+            }
+
+            if (isMobile && navMenu) {
+                navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu no mobile
+            }
+        }
+    }
+}
+
+// Configura o estado inicial da topbar
+window.addEventListener('load', adjustTopbar);
+window.addEventListener('scroll', adjustTopbar);
+
 // Função para rolar até uma seção específica
 function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 // Função para abrir ou fechar a modal de contato
 function toggleContactModal() {
     const contactModal = document.getElementById('contact-modal');
-    if (contactModal.style.display === 'flex') {
-        contactModal.style.display = 'none';
-    } else {
-        contactModal.style.display = 'flex';
+    if (contactModal) {
+        contactModal.style.display = (contactModal.style.display === 'flex') ? 'none' : 'flex';
     }
 }
 
@@ -66,7 +109,7 @@ function checkVisibility() {
     });
 
     // Verifica a visibilidade do título "Nossos Serviços"
-    if (isElementInViewport(servicosTitle)) {
+    if (servicosTitle && isElementInViewport(servicosTitle)) {
         servicosTitle.classList.add('show');
     }
 }
@@ -75,44 +118,22 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 window.addEventListener('load', checkVisibility);
 
-// Ajusta a cor da topbar com base na rolagem da página
-function adjustTopbar() {
-    var topbar = document.querySelector('header');
-    var navMenu = document.querySelector('.nav-menu'); 
-    var scrollPosition = window.scrollY;
-    var isMobile = window.innerWidth <= 768;
-
-    if (scrollPosition === 0) {
-        // Quando no topo, aplica a cor da imagem ou transparente
-        topbar.style.backgroundColor = "transparent";
-        if (isMobile) {
-            navMenu.style.backgroundColor = "transparent"; // Fica transparente no mobile
-        }
-    } else {
-        // Rolando para baixo, muda para a cor desejada
-        topbar.style.backgroundColor = "#3C8DBC"; // Cor atual quando rola a página
-        if (isMobile) {
-            navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu no mobile
-        }
-    }
-}
-
-// Configura o estado inicial da topbar
-adjustTopbar();
-
-window.addEventListener('scroll', adjustTopbar);
-
+// Configura rolagem suave para âncoras
 document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
+// Ajusta a ordem das divs e imagens conforme a largura da tela
 document.addEventListener("DOMContentLoaded", function() {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
@@ -130,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
     adjustLayout(); // Chama a função no carregamento da página
     window.addEventListener('resize', function() {
         if (window.innerWidth >= 768) {
-            // Caso a tela seja maior ou igual a 768, mantenha a ordem original
+            // Caso a tela seja maior ou igual a 768, mantém a ordem original
             iconBoxes.forEach((box, index) => {
                 if (imgBoxes[index]) {
                     box.parentNode.insertBefore(imgBoxes[index], box);
@@ -142,11 +163,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Hamburger Menu Functionality
-const menuToggle = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('.nav-menu');
+// Controle do menu hambúrguer
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav ul');
+const body = document.body;
 
-// Toggle the 'active' class to trigger animations
-menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('toggle');
+        navMenu.classList.toggle('nav-active');
+    });
 });
