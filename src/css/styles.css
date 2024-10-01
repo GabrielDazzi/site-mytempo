@@ -129,15 +129,6 @@ nav ul li a:hover {
     animation: fadeInUp 1s 0.5s forwards;
 }
 
-.hero-text {
-    background-color: #8b8b8b81;
-    border-style: unset;
-    width: 800px;
-    height: 200px;
-    border-radius: 10px;
-    animation: fadeInUp 1s forwards;
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -524,10 +515,6 @@ footer p {
         transform: translateY(0); 
     }
 
-    .hero-text {
-        background-color: #0c506d00;
-    }
-
     .hero h1 {
         font-size: 36px;
     }
@@ -576,6 +563,13 @@ footer p {
 @media screen and (max-width: 480px) {
     .hero h1 {
         font-size: 28px;
+    }
+
+    .hero {
+        background-image: url('/src/img/background-temp-retrato.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .hero p {
@@ -629,4 +623,3 @@ footer p {
         transform: translateY(-3px);
     }
 }
-
