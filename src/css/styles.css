@@ -275,6 +275,7 @@ button:hover {
 .contents {
     position: relative;
     padding: 30px 10px;
+    margin-top: 100px;
     text-align: center;
 }
 
