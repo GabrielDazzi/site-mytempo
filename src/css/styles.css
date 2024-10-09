@@ -11,6 +11,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -176,6 +177,40 @@ button {
 button:hover {
     background-color: #5094bb;
     transform: translateY(-3px);
+}
+
+.sectiono {
+    padding: 50px 20px;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #3C8DBC;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5094bb;
 }
 
 .section-title {

@@ -8,8 +8,8 @@ function adjustTopbar() {
 
     if (topbar) {
         if (scrollPosition === 0) {
-            // Quando no topo, aplica a cor transparente
-            topbar.style.backgroundColor = "transparent";
+            // Quando no topo, aplica a cor
+            topbar.style.backgroundColor = isMobile ? "#3C8DBC" : "transparent"; // Cor sólida em dispositivos móveis
             
             // Deixa o menu hambúrguer invisível no topo
             if (burgerMenu) {
@@ -17,7 +17,7 @@ function adjustTopbar() {
             }
 
             if (isMobile && navMenu) {
-                navMenu.style.backgroundColor = "transparent"; // Fica transparente no mobile
+                navMenu.style.backgroundColor = "#3C8DBC"; // Mantém a cor sólida no mobile
             }
         } else {
             // Rolando para baixo, muda para a cor desejada
