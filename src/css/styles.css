@@ -351,15 +351,6 @@ footer p {
     font-size: 16px;
 }
 
-#map {
-    height: 400px;
-    width: 40%;
-    margin: 40px auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 .contact-btn {
     position: fixed;
     bottom: 20px;
@@ -432,13 +423,6 @@ footer p {
 
 .close-btn:hover {
     background-color: #5094bb;
-}
-
-.titulo-map {
-    text-align: center;
-    margin: 130px 0 20px;
-    margin-bottom: 40px;
-    width: 100%;
 }
 
 .container {
