@@ -150,7 +150,7 @@ button:hover {
     transform: translateY(-3px);
 }
 
-.SM-button {
+.SM-button, .SM-button-1 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
@@ -162,12 +162,18 @@ button:hover {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.SM-button:hover {
+.SM-button:hover, .SM-button-1:hover {
     transform: scale(1.05);
     background-color: #5094bb;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 15vh; 
+}
 
 .container {
     display: flex;
