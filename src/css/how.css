@@ -51,8 +51,11 @@ header div {
 }
 
 header img {
+    position: absolute;
     height: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
+    top: 10px;
+    left: 10px;
 }
 
 nav {
@@ -62,8 +65,11 @@ nav {
 
 nav ul {
     list-style: none;
+    position: absolute;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    top: 20px;
+    right: 10px;
 }
 
 nav ul li a {
@@ -114,7 +120,7 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
     margin-bottom: 100px;
@@ -159,7 +165,7 @@ h1 {
 }
 
 .description p {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
 }
@@ -205,9 +211,6 @@ h1 {
         transition: opacity 0.3s ease;
     }
 
-    .logo11 {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {

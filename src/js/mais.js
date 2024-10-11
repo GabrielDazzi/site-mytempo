@@ -35,15 +35,6 @@ function adjustTopbar() {
     var topbar = document.querySelector('header');
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition === 0) {
-        // Quando no topo, aplica a cor da imagem ou transparente
-        topbar.style.backgroundColor = "transparent";
-        topbar.classList.remove('scrolled'); // Remove a classe quando no topo
-    } else {
-        // Rolando para baixo, muda para a cor desejada
-        topbar.style.backgroundColor = "#173857"; // cor atual quando rola a página
-        topbar.classList.add('scrolled'); // Adiciona a classe quando rola
-    }
 }
 
 // Adiciona um ouvinte de evento para rolagem
