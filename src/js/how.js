@@ -1,17 +1,18 @@
-// Seleciona todos os títulos das seções
-const titles = document.querySelectorAll('h1');
+document.addEventListener("DOMContentLoaded", () => {
+    const titles = document.querySelectorAll("h1");
+    
+    titles.forEach(title => {
+        title.addEventListener("click", () => {
+            const content = title.nextElementSibling; // Pega o próximo elemento (o conteúdo)
+            content.classList.toggle("hidden");
 
-// Adiciona um evento de clique a cada título
-titles.forEach(title => {
-    title.addEventListener('click', () => {
-        // Encontra o conteúdo correspondente ao título clicado
-        const content = title.nextElementSibling;
-
-        // Verifica se o conteúdo está escondido ou visível
-        if (content.classList.contains('hidden')) {
-            content.classList.remove('hidden'); // Exibe o conteúdo
-        } else {
-            content.classList.add('hidden'); // Esconde o conteúdo
-        }
+            // Alterna a seta
+            const arrow = title.querySelector(".arrow");
+            if (content.classList.contains("hidden")) {
+                arrow.textContent = "ᐅ"; // seta para a direita
+            } else {
+                arrow.textContent = "ᐁ"; // seta para baixo
+            }
+        });
     });
 });
