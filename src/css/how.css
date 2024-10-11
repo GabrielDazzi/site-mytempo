@@ -188,16 +188,17 @@ footer p {
 
 @media (max-width: 768px) {
     .titulo {
-        margin-top: 330px;
-        margin-bottom: 450px;
-    }
+        width: 300px;
+        text-align: center;
+        margin: 255px auto 400px;
+        }
+        
     nav ul {
         flex-direction: column;
         top: 60px;
         right: 0;
         width: 100%;
         height: auto;
-        background-color: #990000;
         align-items: center;
         justify-content: space-evenly;
         display: none;
@@ -226,6 +227,10 @@ footer p {
         opacity: 1;
         transition: opacity 0.3s ease;
     }
+
+footer {
+    width: 95%;
+}
 
 }
 
