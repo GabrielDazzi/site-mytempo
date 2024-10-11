@@ -226,12 +226,13 @@ footer p {
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 450px) {
     nav ul {
         gap: 5px;
     }
 
     nav ul li a {
         padding: 4px;
+        font-size: 12px;
     }
 }

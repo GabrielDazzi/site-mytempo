@@ -11,23 +11,12 @@ function adjustTopbar() {
             // Quando no topo, aplica a cor
             topbar.style.backgroundColor = isMobile ? "#3C8DBC" : "transparent"; // Cor sólida em dispositivos móveis
             
-            // Deixa o menu hambúrguer invisível no topo
-            if (burgerMenu) {
-                burgerMenu.style.opacity = 0; // Torna invisível
-            }
-
             if (isMobile && navMenu) {
                 navMenu.style.backgroundColor = "#3C8DBC"; // Mantém a cor sólida no mobile
             }
         } else {
             // Rolando para baixo, muda para a cor desejada
             topbar.style.backgroundColor = "#3C8DBC"; // Cor atual quando rola a página
-            
-            // Traz o menu hambúrguer de volta com a cor original
-            if (burgerMenu) {
-                burgerMenu.style.opacity = 1; // Torna visível novamente
-                burgerMenu.style.transition = "opacity 0.3s"; // Adiciona uma transição suave
-            }
 
             if (isMobile && navMenu) {
                 navMenu.style.backgroundColor = "#3C8DBC"; // A mesma cor para o menu no mobile

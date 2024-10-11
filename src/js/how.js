@@ -16,3 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav ul');
+const body = document.body;
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('toggle');
+        navMenu.classList.toggle('nav-active');
+    });
+});

@@ -38,11 +38,17 @@ function adjustTopbar() {
     if (scrollPosition === 0) {
         // Quando no topo, aplica a cor da imagem ou transparente
         topbar.style.backgroundColor = "transparent";
+        topbar.classList.remove('scrolled'); // Remove a classe quando no topo
     } else {
         // Rolando para baixo, muda para a cor desejada
         topbar.style.backgroundColor = "#173857"; // cor atual quando rola a página
+        topbar.classList.add('scrolled'); // Adiciona a classe quando rola
     }
 }
+
+// Adiciona um ouvinte de evento para rolagem
+window.addEventListener('scroll', adjustTopbar);
+
 
 // Configura o estado inicial da topbar
 adjustTopbar();
@@ -86,5 +92,19 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
         } else {
             adjustLayout(); // Reajusta em telas menores
         }
+    });
+});
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav ul');
+const body = document.body;
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('toggle');
+        navMenu.classList.toggle('nav-active');
     });
 });
