@@ -170,6 +170,21 @@ h1 {
     margin-bottom: 10px;
 }
 
+footer {
+    background: linear-gradient(90deg, #990000, #660000);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: absolute;
+    height: 60px;
+    width: 98%;
+}
+
+footer p {
+    font-size: 16px;
+}
+
 @media (max-width: 768px) {
     .titulo {
         margin-top: 330px;
