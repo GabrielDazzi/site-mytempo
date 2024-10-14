@@ -14,6 +14,16 @@ html {
     text-decoration: none;
 }
 
+.fade-in {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
+}
+
+.fade-in.show {
+    opacity: 1; /* Visível quando a classe 'show' é adicionada */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

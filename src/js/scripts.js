@@ -107,6 +107,28 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 window.addEventListener('load', checkVisibility);
 
+// Função para aplicar a animação de fade-in
+function applyFadeInAnimation() {
+    const elementsToFade = document.querySelectorAll('.content1, .contents, .container, .sectiono');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Para observar apenas uma vez
+            }
+        });
+    });
+
+    elementsToFade.forEach(el => {
+        el.classList.add('fade-in'); // Adiciona a classe fade-in
+        observer.observe(el); // Observa cada elemento
+    });
+}
+
+// Chama a função após o DOM ser carregado
+document.addEventListener('DOMContentLoaded', applyFadeInAnimation);
+
 // Configura rolagem suave para âncoras
 document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
