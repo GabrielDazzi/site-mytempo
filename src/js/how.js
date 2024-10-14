@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
     titles.forEach(title => {
         title.addEventListener("click", () => {
-            const content = title.nextElementSibling; // Pega o próximo elemento (o conteúdo)
+            const content = title.nextElementSibling; // Pega o próximo conteudo
             content.classList.toggle("hidden");
 
             // Alterna a seta
             const arrow = title.querySelector(".arrow");
             if (content.classList.contains("hidden")) {
-                arrow.textContent = "ᐅ"; // seta para a direita
+                arrow.textContent = "ᐅ";
             } else {
-                arrow.textContent = "ᐁ"; // seta para baixo
+                arrow.textContent = "ᐁ";
             }
         });
     });
