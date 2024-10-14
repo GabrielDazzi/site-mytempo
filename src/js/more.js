@@ -9,7 +9,6 @@ function isElementInViewport(el) {
     );
 }
 
-// Função para aplicar a classe 'show' aos elementos visíveis
 function checkVisibility() {
     const services = document.querySelectorAll('.service');
     const servicosTitle = document.getElementById('servicos'); // Seleciona o título "Nossos Serviços"
