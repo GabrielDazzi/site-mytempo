@@ -1,4 +1,3 @@
-window.onload = function() {
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -114,4 +113,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // (Run away, run away—, back) (ooh, ooh)
 // (Run away, run away—, back) (ooh, ooh)
 // (Run away, run away—, back) (ooh, ooh)
-}
