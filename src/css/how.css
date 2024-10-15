@@ -32,7 +32,12 @@
 
 .accordion.active {
     background-color: #00000031;
-  }
+}
+
+::selection {
+    color: white;
+    background-color: #da0000;
+}
 
 * {
     margin: 0;
@@ -50,10 +55,10 @@ body {
     background: linear-gradient(90deg, #990000, #660000);
     color: white;
     padding: 20px;
-    user-select: none;
+    /* user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
+    -ms-user-select: none; */
 }
 
 .container {
