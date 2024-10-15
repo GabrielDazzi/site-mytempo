@@ -5,22 +5,34 @@
     padding: 18px;
     width: 100%;
     border: none;
-    text-align: left;
     outline: none;
     text-align: center;
     font-size: 18px;
     transition: 0.4s;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: block;
 }
+
 
 .panel {
     padding: 0 18px;
+    display: flex;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #0000000e;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: flex-start;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
+
+.active, .accordion:hover {
+    background-color: #00000031;
+  }
 
 * {
     margin: 0;
@@ -244,6 +256,25 @@ footer p {
         width: 95%;
     }
 
+    .panel {
+        padding: 0 18px;
+        display: flex;
+        flex-direction: column; 
+        max-height: 0; 
+        overflow: hidden; 
+        transition: max-height 0.5s ease-out; 
+        background-color: #0000000e;
+        justify-content: center; 
+        align-items: flex-start;
+        text-align: justify;
+        text-justify: inter-word;
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+
+    .panel.open {
+        max-height: none;
+    }
 }
 
 @media (min-width: 768px) {
