@@ -30,7 +30,7 @@
     margin: 0 auto; 
 }
 
-.active, .accordion:hover {
+.accordion.active {
     background-color: #00000031;
   }
 
