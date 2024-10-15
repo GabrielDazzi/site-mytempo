@@ -282,7 +282,6 @@ footer p {
         align-items: flex-start;
         text-align: justify;
         text-justify: inter-word;
-        max-width: 1200px;
         margin: 0 auto; 
     }
 
