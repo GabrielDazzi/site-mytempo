@@ -85,12 +85,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // (Run away and never come back) I can't be what you want from me, well, alright
 // (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
 // (Run away and never come back) I can't be what you want from me, well, alright
-
-// Niggas say: Turn up, hoes say: Turn up
-// Only bad thing 'bout a star is they burn up
-// Niggas say: Turn up, hoes say: Turn up
-// Only bad thing 'bout a star is they burn up
-// Rest in peace to Aaliyah
-// Rest in peace to Left Eye (Left Eye)
-// Michael Jackson, I'll see ya
-// Just as soon as I die (I die)
