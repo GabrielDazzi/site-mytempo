@@ -94,11 +94,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // Rest in peace to Left Eye (Left Eye)
 // Michael Jackson, I'll see ya
 // Just as soon as I die (I die)
-
-// Got me up so high, tryna get a piece of that apple pie, uh
-// I be up so high, tryna get a piece of that apple pie
-// Got me up so high, tryna get a piece of that apple pie
-// I be up so high, tryna get a piece of that apple pie
-// Got me up so high, tryna get a piece of that apple pie, uh
-// I be up so high, tryna get a piece of that apple
-
