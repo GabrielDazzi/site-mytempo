@@ -56,8 +56,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // And I know she knows, and I know she knows (and you find yourself praying up to heaven above)
 // Deep down, she knows, she knows (but honestly, I've never had much sympathy)
 // And I know she knows, and I know she knows ('cause those bad things, I always saw them coming for me)
-
-// Well, alright (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) I can't be what you want from me, well, alright
-// (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) I can't be what you want from me, well, alright
