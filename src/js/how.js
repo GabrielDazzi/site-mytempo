@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 // She knows
 // She knows (ayy)
 // (Bad things happen to the people you love)
