@@ -26,14 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
         navMenu.classList.toggle('nav-active');
     });
 });
-
-// She knows
-// She knows (ayy)
-// (Bad things happen to the people you love)
-// (And you find yourself praying up to heaven above)
-// (But honestly, I've never had much sympathy)
-// ('Cause those bad things, I always saw them coming for me)
-// (I'm gonna run, run away) oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) well, alright
-// (I'm gonna run, run away) oh, I (run, run away, run away), oh, I-I-I
-// (Show 'em that your color is black) well, alright
