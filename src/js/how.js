@@ -51,8 +51,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // This is Martin Luther King in the club, getting dubs
 // With a bad bitch in his ear, sayin' that she down for whatever
 // In the back of his mind is Coretta
-
-// And she knows, she knows (bad things happen to the people you love)
-// And I know she knows, and I know she knows (and you find yourself praying up to heaven above)
-// Deep down, she knows, she knows (but honestly, I've never had much sympathy)
-// And I know she knows, and I know she knows ('cause those bad things, I always saw them coming for me)
