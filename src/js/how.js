@@ -8,7 +8,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = "500px";
+      panel.style.maxHeight = "550px";
     } 
   });
 }
