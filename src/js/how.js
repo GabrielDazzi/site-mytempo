@@ -102,10 +102,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // Got me up so high, tryna get a piece of that apple pie, uh
 // I be up so high, tryna get a piece of that apple
 
-// Well, alright (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) I can't be what you want from me, well, alright
-// (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) I can't be what you want from me, well, alright
-// (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
-// (Run away and never come back) I can't be what you want from me, well, alright
-
