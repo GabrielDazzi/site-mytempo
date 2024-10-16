@@ -109,7 +109,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
 // (Run away and never come back) I can't be what you want from me, well, alright
 
-// (Run away, run away—, back) (ooh, ooh)
-// (Run away, run away—, back) (ooh, ooh)
-// (Run away, run away—, back) (ooh, ooh)
-// (Run away, run away—, back) (ooh, ooh)
