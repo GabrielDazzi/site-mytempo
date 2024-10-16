@@ -61,18 +61,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // (Run away and never come back) I can't be what you want from me, well, alright
 // (I'm gonna run, run away), oh, I (run, run away, run away), oh, I-I-I
 // (Run away and never come back) I can't be what you want from me, well, alright
-
-// Damned if I do (shit), damned if I don't
-// I'm passing up on bad hoes
-// Trying to be the man that she want, what she want?
-// What she, what she want from a nigga?
-// To put a ring on it
-// Got a bitch on my dick right now
-// And she just want to sing on it
-// Got me up so high, tryna get a piece of that apple pie
-// I be up so high, tryna get a piece of that apple pie
-// Dancehall vibe with my pants on fire
-// 'Cause I told her I was asleep
-// 'Cause I creep with this pretty young thing that I chose
-// And she could be doing the same thing, I suppose
-
