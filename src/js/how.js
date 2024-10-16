@@ -37,17 +37,3 @@ document.addEventListener('DOMContentLoaded', function () {
 // (Run away and never come back) well, alright
 // (I'm gonna run, run away) oh, I (run, run away, run away), oh, I-I-I
 // (Show 'em that your color is black) well, alright
-
-// Damned if I do, damned if I don't
-// You know I got a girl back home
-// You got a man, what you want, what you want?
-// What these bitches want from a nigga?
-// On some DMX shit, huh
-// I know them other niggas love tricking
-// On some BMX shit, but not me
-// Now I'm sure you done heard about me
-// A black star, Mos Def, Kweli
-// Good so them bad hoes try me, they try me
-// This is Martin Luther King in the club, getting dubs
-// With a bad bitch in his ear, sayin' that she down for whatever
-// In the back of his mind is Coretta
