@@ -228,7 +228,8 @@ footer p {
         position: fixed;
         top: 60px;
         right: 0;
-        width: 100%;
+        width: 40%;
+        border-radius: 0% 0% 0px 10px;
         background-color: #173857;
         align-items: center;
         justify-content: space-evenly;

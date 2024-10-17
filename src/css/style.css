@@ -547,11 +547,12 @@ footer p {
         position: fixed;
         top: 60px;
         right: 0;
-        width: 100%;
+        width: 40%;
         background-color: #3C8DBC;
         align-items: center;
         justify-content: space-evenly;
         overflow: hidden;
+        border-radius: 0% 0% 0px 10px;
         height: 0;
         opacity: 0;
         visibility: hidden;
