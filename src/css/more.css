@@ -9,7 +9,7 @@ body {
     background-image: url('/src/img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     background-attachment: fixed;
     color: white;
     overflow-x: hidden;
@@ -30,7 +30,7 @@ body {
 .logo11 {
     position: absolute;
     height: 35px;
-    left: 10px; 
+    left: 10px;
     bottom: 6px;
 }
 
@@ -52,7 +52,7 @@ nav ul {
     display: flex;
     gap: 10px;
     position: absolute;
-    right: 10px; 
+    right: 10px;
     bottom: 20px;
 }
 
@@ -61,7 +61,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 15px;
     padding: 10px;
-    transition: font-size 0.3s ease, background-color 0.3s, transform 0.3s ease; 
+    transition: font-size 0.3s ease, background-color 0.3s, transform 0.3s ease;
 }
 
 .hamburger {
@@ -70,8 +70,8 @@ nav ul li a {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 20px; 
-    z-index: 10; 
+    right: 20px;
+    z-index: 10;
     opacity: 1;
     transition: opacity 0.3s ease;
 }
@@ -173,6 +173,7 @@ footer p {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -180,12 +181,12 @@ footer p {
 }
 
 .fade-in {
-    opacity: 0; 
-    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .fade-in.show {
-    opacity: 1; 
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -221,7 +222,7 @@ footer p {
     p {
         font-size: 14px;
     }
-    
+
     nav ul {
         flex-direction: column;
         position: fixed;
@@ -237,14 +238,14 @@ footer p {
         visibility: hidden;
         transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-    
+
     .nav-active {
-        height: 40%; 
+        height: 40%;
         opacity: 1;
         visibility: visible;
         transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-    
+
     .hamburger {
         display: flex;
         justify-content: space-around;

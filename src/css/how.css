@@ -10,24 +10,24 @@
     font-size: 18px;
     transition: 0.4s;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: block;
 }
 
 .panel {
     padding: 0 18px;
     display: flex;
-    max-height: 0  ;
+    max-height: 0;
     flex-direction: row;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #0000000e;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     text-align: justify;
     text-justify: inter-word;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .panel.open {
@@ -251,14 +251,14 @@ footer p {
         visibility: hidden;
         transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-    
+
     .nav-active {
-        height: 40%; 
+        height: 40%;
         opacity: 1;
         visibility: visible;
         transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-    
+
     .hamburger {
         display: flex;
         justify-content: space-around;
@@ -271,7 +271,7 @@ footer p {
     }
 
     .panel {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .panel.open {

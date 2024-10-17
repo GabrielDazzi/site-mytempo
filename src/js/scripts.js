@@ -1,7 +1,7 @@
 // Função para ajustar a cor da topbar com base na rolagem da página
 function adjustTopbar() {
     const topbar = document.querySelector('header');
-    const navMenu = document.querySelector('.nav-menu'); 
+    const navMenu = document.querySelector('.nav-menu');
     const burgerMenu = document.querySelector('.burger-menu'); // Seleciona o menu hambúrguer
     const scrollPosition = window.scrollY;
     const isMobile = window.innerWidth <= 768;
@@ -10,7 +10,7 @@ function adjustTopbar() {
         if (scrollPosition === 0) {
             // Quando no topo, aplica a cor
             topbar.style.backgroundColor = isMobile ? "#3C8DBC" : "transparent"; // Cor sólida em dispositivos móveis
-            
+
             if (isMobile && navMenu) {
                 navMenu.style.backgroundColor = "#3C8DBC"; // Mantém a cor sólida no mobile
             }
@@ -61,14 +61,14 @@ if (closeBtn) {
 }
 
 if (contactLink) {
-    contactLink.addEventListener('click', function(event) {
+    contactLink.addEventListener('click', function (event) {
         event.preventDefault(); // Impede o comportamento padrão do link
         toggleContactModal(); // Abre a modal
     });
 }
 
 // Fecha a modal ao clicar fora dela
-window.addEventListener('click', function(event) {
+window.addEventListener('click', function (event) {
     const contactModal = document.getElementById('contact-modal');
     if (contactModal && event.target === contactModal) {
         contactModal.style.display = 'none';
@@ -144,7 +144,7 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
 });
 
 // Ajusta a ordem das divs e imagens conforme a largura da tela
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
 
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     adjustLayout(); // Chama a função no carregamento da página
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth >= 768) {
             // Caso a tela seja maior ou igual a 768, mantém a ordem original
             iconBoxes.forEach((box, index) => {

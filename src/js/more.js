@@ -46,7 +46,7 @@ adjustTopbar();
 document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         document.querySelector(targetId).scrollIntoView({
             behavior: 'smooth'
@@ -54,7 +54,7 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     adjustLayout(); // Chama a função no carregamento da página
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth >= 768) {
             // Caso a tela seja maior ou igual a 768, mantenha a ordem original
             iconBoxes.forEach((box, index) => {
