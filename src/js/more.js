@@ -1,5 +1,3 @@
-// Remover a função antiga 'isElementInViewport' e 'checkVisibility'
-
 // Função para aplicar a animação de fade-in
 function applyFadeInAnimation() {
     // Seleciona todos os elementos que precisam da animação
