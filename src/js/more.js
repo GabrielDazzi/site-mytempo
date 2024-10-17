@@ -1,62 +1,62 @@
-// Função para verificar se o elemento está visível na janela
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top < window.innerHeight &&
-        rect.bottom >= 0 &&
-        rect.left < window.innerWidth &&
-        rect.right >= 0
-    );
-}
+// Remover a função antiga 'isElementInViewport' e 'checkVisibility'
 
-function checkVisibility() {
-    const services = document.querySelectorAll('.service');
-    const servicosTitle = document.getElementById('servicos'); // Seleciona o título "Nossos Serviços"
+// Função para aplicar a animação de fade-in
+function applyFadeInAnimation() {
+    // Seleciona todos os elementos que precisam da animação
+    const elementsToFade = document.querySelectorAll('.row, .service, #servicos');
 
-    services.forEach(service => {
-        if (isElementInViewport(service)) {
-            service.classList.add('show');
-        }
+    // Cria um IntersectionObserver para monitorar a visibilidade dos elementos
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show'); // Adiciona a classe show para animação
+                observer.unobserve(entry.target); // Para de observar após a primeira vez
+            }
+        });
     });
 
-    // Verifica a visibilidade do título "Nossos Serviços"
-    if (isElementInViewport(servicosTitle)) {
-        servicosTitle.classList.add('show');
-    }
+    // Adiciona a classe fade-in inicialmente e começa a observar os elementos
+    elementsToFade.forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+    });
 }
 
-// Verifica a visibilidade ao carregar e ao rolar a página
-window.addEventListener('scroll', checkVisibility);
-window.addEventListener('load', checkVisibility);
+// Execute a animação ao carregar e ao rolar
+window.addEventListener('scroll', applyFadeInAnimation);
+window.addEventListener('load', applyFadeInAnimation);
 
 // Ajusta a cor da topbar com base na rolagem da página
 function adjustTopbar() {
-    var topbar = document.querySelector('header');
-    var scrollPosition = window.scrollY;
+    const topbar = document.querySelector('header');
+    const scrollPosition = window.scrollY;
 
+    // Modifique o estilo da topbar com base na posição de rolagem
+    if (scrollPosition > 50) {
+        topbar.classList.add('scrolled'); // Adiciona uma classe quando rolar a página
+    } else {
+        topbar.classList.remove('scrolled'); // Remove a classe se estiver no topo
+    }
 }
 
-// Adiciona um ouvinte de evento para rolagem
+// Adiciona o ouvinte de evento para rolagem
 window.addEventListener('scroll', adjustTopbar);
-
 
 // Configura o estado inicial da topbar
 adjustTopbar();
 
-window.addEventListener('scroll', adjustTopbar);
-
 document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href');
-      document.querySelector(targetId).scrollIntoView({
-        behavior: 'smooth'
-      });
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-  });
-  
-  document.addEventListener("DOMContentLoaded", function() {
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
 

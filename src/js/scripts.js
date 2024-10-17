@@ -126,7 +126,6 @@ function applyFadeInAnimation() {
     });
 }
 
-// Chama a função após o DOM ser carregado
 document.addEventListener('DOMContentLoaded', applyFadeInAnimation);
 
 // Configura rolagem suave para âncoras
