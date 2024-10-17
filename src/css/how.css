@@ -237,32 +237,27 @@ footer p {
 
     nav ul {
         flex-direction: column;
+        position: fixed;
         top: 60px;
         right: 0;
         width: 100%;
-        height: auto;
+        background: linear-gradient(90deg, #830000, #4d0000);
         align-items: center;
         justify-content: space-evenly;
-        display: none;
-        z-index: 1000;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
+    
     .nav-active {
-        display: flex;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background: linear-gradient(90deg, #720000, #4d0000);
-        align-items: center;
-        justify-content: space-evenly;
-        z-index: 1000;
+        height: 40%; 
+        opacity: 1;
+        visibility: visible;
+        transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
-
+    
     .hamburger {
         display: flex;
         justify-content: space-around;
