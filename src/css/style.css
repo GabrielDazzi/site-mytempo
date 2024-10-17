@@ -610,6 +610,19 @@ footer p {
         margin-top: 300px;
         margin-right: 10px;
     }
+
+    .mapa-legenda {
+        flex-direction: column;
+    }
+
+    .img-bm {
+        max-height: 280px;
+        max-width: 280px;
+    }
+
+    #mapa-brasil {
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
