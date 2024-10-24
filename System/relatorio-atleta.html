@@ -46,12 +46,17 @@
     <button class="accordion">RELATÓRIO DE ATLETAS</button>
     <div class="panel">
       <div class="image">
-        <img src="/src/img2/área de relatorio dos inscritos.png" alt="Relatório de Atletas">
+        <img src="/src/img2/área de relatorio dos inscritos.png" alt="Relatório de Atletas" onclick="abrirImagem('/src/img2/área de inscritos.png')">
       </div>
       <div class="description">
         <p>Nessa tela você tem acesso a todos os atletas disponíveis na prova. Gerando um relatório, é possível obter
           informações de entrega de kit e imprimir a lista para o evento.</p>
       </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="fecharImagem()">
+      <span class="fechar">&times;</span>
+      <img class="imagem-grande" id="imagem-grande" src="">
     </div>
 
   <footer>
