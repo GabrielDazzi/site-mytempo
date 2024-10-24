@@ -149,7 +149,7 @@ nav {
     display: block;
     max-width: 80%;
     max-height: 80%;
-  }
+}
 
 .fechar {
     position: absolute;
@@ -159,7 +159,7 @@ nav {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
 nav ul {
     list-style: none;
