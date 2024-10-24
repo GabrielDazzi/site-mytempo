@@ -321,10 +321,6 @@ footer p {
     .panel.open {
         max-height: none;
     }
-
-    /* .titulo-span {
-        top: 52%;
-    } */
 }
 
 @media (min-width: 768px) {
