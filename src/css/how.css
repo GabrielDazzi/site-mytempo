@@ -12,7 +12,7 @@ a {
     padding: 7px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-  }
+}
 
 .accordion {
     background-color: #0000000e;
@@ -133,7 +133,7 @@ nav {
 }
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -142,7 +142,7 @@ nav {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
 .imagem-grande {
     margin: auto;
