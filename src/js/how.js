@@ -26,3 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
     navMenu.classList.toggle('nav-active');
   });
 });
+
+function abrirImagem(src) {
+  document.getElementById('imagem-grande').src = src;
+  document.getElementById('modal').style.display = 'block';
+}
+
+function fecharImagem() {
+  document.getElementById('modal').style.display = 'none';
+}
