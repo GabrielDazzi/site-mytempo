@@ -336,6 +336,11 @@ footer p {
         max-height: 100%;
         left: 1%;
     }
+
+    .fechar {
+        top: 1%;
+        right: 5%;
+    }
 }
 
 @media (min-width: 768px) {
