@@ -30,8 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function abrirImagem(src) {
   document.getElementById('imagem-grande').src = src;
   document.getElementById('modal').style.display = 'block';
+  document.body.classList.add('modal-open'); // Bloqueia o scroll
 }
 
 function fecharImagem() {
   document.getElementById('modal').style.display = 'none';
+  document.body.classList.remove('modal-open'); // Libera o scroll
 }
