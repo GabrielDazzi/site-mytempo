@@ -144,14 +144,14 @@ nav {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  .imagem-grande {
+.imagem-grande {
     margin: auto;
     display: block;
     max-width: 80%;
     max-height: 80%;
   }
 
-  .fechar {
+.fechar {
     position: absolute;
     top: 15px;
     right: 35px;
