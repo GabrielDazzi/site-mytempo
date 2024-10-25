@@ -32,14 +32,11 @@ function abrirImagem(src) {
   document.getElementById('modal').style.display = 'block';
   document.body.classList.add('modal-open'); // Bloqueia o scroll
 
-  // Seleciona a imagem e elementos de texto do modal
   const img = document.getElementById('imagem-grande');
   const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
-
-  // Variável para rastrear o estado do zoom
   let zoomAtivo = false;
 
-  // Função para aplicar o zoom
+  // Função para aplicar o zoom e definir a origem
   function aplicarZoom(xPercent, yPercent) {
     img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
     img.style.transform = "scale(2)";
@@ -56,8 +53,8 @@ function abrirImagem(src) {
   img.addEventListener('click', function(e) {
     if (!zoomAtivo) {
       const rect = img.getBoundingClientRect();
-      const x = e.clientX - rect.left; // Posição X do clique
-      const y = e.clientY - rect.top;  // Posição Y do clique
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
       const xPercent = (x / rect.width) * 100;
       const yPercent = (y / rect.height) * 100;
 
@@ -69,27 +66,42 @@ function abrirImagem(src) {
     }
   });
 
-  // Evento de toque para alternar o zoom no mobile
+  // Eventos para toque e movimento no mobile
   img.addEventListener('touchstart', function(e) {
+    e.preventDefault(); // Impede a rolagem da página
+    zoomAtivo = true;
     const rect = img.getBoundingClientRect();
     const x = e.touches[0].clientX - rect.left;
     const y = e.touches[0].clientY - rect.top;
     const xPercent = (x / rect.width) * 100;
     const yPercent = (y / rect.height) * 100;
+    
+    aplicarZoom(xPercent, yPercent);
+  });
 
-    if (!zoomAtivo) {
-      aplicarZoom(xPercent, yPercent);
-      zoomAtivo = true;
-    } else {
-      removerZoom();
-      zoomAtivo = false;
+  img.addEventListener('touchmove', function(e) {
+    if (zoomAtivo) {
+      e.preventDefault(); // Impede a rolagem da página enquanto move
+      const rect = img.getBoundingClientRect();
+      const x = e.touches[0].clientX - rect.left;
+      const y = e.touches[0].clientY - rect.top;
+      const xPercent = (x / rect.width) * 100;
+      const yPercent = (y / rect.height) * 100;
+
+      // Atualiza a origem do zoom com o movimento do toque
+      img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
     }
+  });
+
+  img.addEventListener('touchend', function() {
+    removerZoom(); // Remove o zoom ao soltar o dedo
+    zoomAtivo = false;
   });
 }
 
 function fecharImagem() {
   document.getElementById('modal').style.display = 'none';
-  document.body.classList.remove('modal-open'); // Libera o scroll
+  document.body.classList.remove('modal-open');
 
   const img = document.getElementById('imagem-grande');
   const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
@@ -98,4 +110,6 @@ function fecharImagem() {
 
   img.removeEventListener('click', null);
   img.removeEventListener('touchstart', null);
+  img.removeEventListener('touchmove', null);
+  img.removeEventListener('touchend', null);
 }
