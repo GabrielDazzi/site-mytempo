@@ -32,33 +32,44 @@ function abrirImagem(src) {
   document.getElementById('modal').style.display = 'block';
   document.body.classList.add('modal-open'); // Bloqueia o scroll
 
+  // Seleciona a imagem e elementos de texto do modal
   const img = document.getElementById('imagem-grande');
   const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
 
+  // Variável para rastrear o estado do zoom
+  let zoomAtivo = false;
+
+  // Função para aplicar o zoom
   function aplicarZoom(xPercent, yPercent) {
     img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
     img.style.transform = "scale(2)";
     textModal.forEach(el => el.style.visibility = 'hidden');
   }
 
+  // Função para remover o zoom
   function removerZoom() {
     img.style.transform = "scale(1)";
     textModal.forEach(el => el.style.visibility = 'visible');
   }
 
-  img.addEventListener('mousemove', function(e) {
-    const rect = img.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const xPercent = (x / rect.width) * 100;
-    const yPercent = (y / rect.height) * 100;
+  // Evento de clique para alternar o zoom no desktop
+  img.addEventListener('click', function(e) {
+    if (!zoomAtivo) {
+      const rect = img.getBoundingClientRect();
+      const x = e.clientX - rect.left; // Posição X do clique
+      const y = e.clientY - rect.top;  // Posição Y do clique
+      const xPercent = (x / rect.width) * 100;
+      const yPercent = (y / rect.height) * 100;
 
-    aplicarZoom(xPercent, yPercent);
+      aplicarZoom(xPercent, yPercent);
+      zoomAtivo = true;
+    } else {
+      removerZoom();
+      zoomAtivo = false;
+    }
   });
 
-  img.addEventListener('mouseleave', removerZoom);
-
-  let zoomAtivo = false;
+  // Evento de toque para alternar o zoom no mobile
   img.addEventListener('touchstart', function(e) {
     const rect = img.getBoundingClientRect();
     const x = e.touches[0].clientX - rect.left;
@@ -85,7 +96,6 @@ function fecharImagem() {
   img.style.transform = "scale(1)";
   textModal.forEach(el => el.style.visibility = 'visible');
 
-  img.removeEventListener('mousemove', null);
-  img.removeEventListener('mouseleave', null);
+  img.removeEventListener('click', null);
   img.removeEventListener('touchstart', null);
 }
