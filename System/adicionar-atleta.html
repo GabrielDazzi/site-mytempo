@@ -39,28 +39,17 @@
 
 <body>
 
-    <div class="titulo">
-      <h1>ADICIONAR ATLETA</h1>
-    </div>
+  <div class="titulo">
+    <h1>ADICIONAR ATLETA</h1>
+  </div>
 
-    <button class="accordion">ADICIONAR ATLETA</button>
-    <div class="panel">
-      <div class="image">
-        <img src="/src/img2/área de adicionar atleta.png" alt="Adicionar Atleta" onclick="abrirImagem('/src/img2/área de adicionar atleta.png')">
-      </div>
-      <div class="description">
-        <p>Adição de novos atletas à sua prova, registre com nome, CPF, gênero, data de nascimento, categoria, número do
-          atleta, etc.</p>
-        <p>Depois de preencher todos os dados, clique em cadastrar e seu atleta será registrado na prova e apto a
-          participar.</p>
-        <p class="note"><strong>(Obs: o número registrado precisar ser um não usado ainda, pois se já houver um atleta
-            registrado nesse número, seu novo cadastro não será realizado com êxito.)</strong></p>
-      </div>
+  <button class="accordion">ADICIONAR ATLETA</button>
+  <div class="panel">
+    <div class="image">
+      <img src="/src/img2/área de adicionar atleta.png" alt="Adicionar Atleta"
+        onclick="abrirImagem('/src/img2/área de adicionar atleta.png')">
     </div>
-
-    <div id="modal" class="modal" onclick="fecharImagem()">
-      <span class="fechar">&times;</span>
-      <img class="imagem-grande" id="imagem-grande" src="">
+    <div class="description">
       <p>Adição de novos atletas à sua prova, registre com nome, CPF, gênero, data de nascimento, categoria, número do
         atleta, etc.</p>
       <p>Depois de preencher todos os dados, clique em cadastrar e seu atleta será registrado na prova e apto a
@@ -68,6 +57,20 @@
       <p class="note"><strong>(Obs: o número registrado precisar ser um não usado ainda, pois se já houver um atleta
           registrado nesse número, seu novo cadastro não será realizado com êxito.)</strong></p>
     </div>
+  </div>
+
+  <div id="modal" class="modal" onclick="fecharImagem()">
+    <span class="fechar">&times;</span>
+    <img class="imagem-grande" id="imagem-grande" src="">
+    <div class="text-modal">
+      <p>Adição de novos atletas à sua prova, registre com nome, CPF, gênero, data de nascimento, categoria, número do
+        atleta, etc.</p>
+      <p>Depois de preencher todos os dados, clique em cadastrar e seu atleta será registrado na prova e apto a
+        participar.</p>
+      <p class="note"><strong>(Obs: o número registrado precisar ser um não usado ainda, pois se já houver um atleta
+          registrado nesse número, seu novo cadastro não será realizado com êxito.)</strong></p>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>

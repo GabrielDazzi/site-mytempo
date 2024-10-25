@@ -39,29 +39,32 @@
 
 <body>
 
-    <div class="titulo">
-      <h1>EDIÇÃO DO ATLETA</h1>
-    </div>
+  <div class="titulo">
+    <h1>EDIÇÃO DO ATLETA</h1>
+  </div>
 
-    <button class="accordion">EDIÇÃO DO ATLETA</button>
-    <div class="panel">
-      <div class="image">
-        <img src="/src/img2/área de edição do atleta.png" alt="Edição do Atleta" onclick="abrirImagem('/src/img2/área de edição do atleta.png')">
-      </div>
-      <div class="description">
-        <p>Nessa área você pode editar um atleta já registrado, mudar número do atleta, nome, gênero, etc.</p>
-        <p>Assim que finalizar seu processo de edição, clique em alterar na parte inferior direita para salvar suas
-          modificações.</p>
-      </div>
+  <button class="accordion">EDIÇÃO DO ATLETA</button>
+  <div class="panel">
+    <div class="image">
+      <img src="/src/img2/área de edição do atleta.png" alt="Edição do Atleta"
+        onclick="abrirImagem('/src/img2/área de edição do atleta.png')">
     </div>
-
-    <div id="modal" class="modal" onclick="fecharImagem()">
-      <span class="fechar">&times;</span>
-      <img class="imagem-grande" id="imagem-grande" src="">
+    <div class="description">
       <p>Nessa área você pode editar um atleta já registrado, mudar número do atleta, nome, gênero, etc.</p>
       <p>Assim que finalizar seu processo de edição, clique em alterar na parte inferior direita para salvar suas
         modificações.</p>
     </div>
+  </div>
+
+  <div id="modal" class="modal" onclick="fecharImagem()">
+    <span class="fechar">&times;</span>
+    <img class="imagem-grande" id="imagem-grande" src="">
+    <div class="text-modal">
+      <p>Nessa área você pode editar um atleta já registrado, mudar número do atleta, nome, gênero, etc.</p>
+      <p>Assim que finalizar seu processo de edição, clique em alterar na parte inferior direita para salvar suas
+        modificações.</p>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
