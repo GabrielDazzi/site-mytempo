@@ -143,20 +143,6 @@ nav {
     max-height: 80%;
 }
 
-.text-modal {
-    position: absolute;
-    max-width: 78%;
-    top: 78%;
-    left: 12%;
-}
-
-.text-modal-2 {
-    position: absolute;
-    max-width: 78%;
-    top: 83%;
-    left: 12%;
-}
-
 .fechar {
     position: absolute;
     top: 15px;
@@ -354,14 +340,6 @@ footer p {
     .fechar {
         top: 1%;
         right: 5%;
-    }
-
-    .text-modal {
-        top: 43%;
-    }
-
-    .text-modal-2 {
-        top: 44%;
     }
 }
 
