@@ -57,6 +57,10 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
 document.addEventListener("DOMContentLoaded", function () {
     const iconBoxes = document.querySelectorAll('.icon-box');
     const imgBoxes = document.querySelectorAll('.img-box');
+    const initialLayout = Array.from(imgBoxes).map((imgBox, index) => ({
+        parent: imgBox.parentNode,
+        nextSibling: imgBox.nextSibling,
+    }));
 
     function adjustLayout() {
         if (window.innerWidth < 768) {
@@ -65,23 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
                     box.parentNode.appendChild(imgBoxes[index]);
                 }
             });
+        } else {
+            restoreInitialLayout();
         }
     }
 
+    function restoreInitialLayout() {
+        imgBoxes.forEach((imgBox, index) => {
+            const { parent, nextSibling } = initialLayout[index];
+            if (nextSibling) {
+                parent.insertBefore(imgBox, nextSibling);
+            } else {
+                parent.appendChild(imgBox);
+            }
+        });
+    }
+
     adjustLayout(); // Chama a função no carregamento da página
-    window.addEventListener('resize', function () {
-        if (window.innerWidth >= 768) {
-            // Caso a tela seja maior ou igual a 768, mantenha a ordem original
-            iconBoxes.forEach((box, index) => {
-                if (imgBoxes[index]) {
-                    box.parentNode.insertBefore(imgBoxes[index], box);
-                }
-            });
-        } else {
-            adjustLayout(); // Reajusta em telas menores
-        }
-    });
+    window.addEventListener('resize', adjustLayout);
 });
+
 
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav ul');
