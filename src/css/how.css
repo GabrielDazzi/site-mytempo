@@ -54,10 +54,10 @@ a {
     background-color: #00000031;
 }
 
-::selection {
+/* ::selection {
     color: white;
     background-color: #da0000;
-}
+} */
 
 * {
     margin: 0;
@@ -75,10 +75,10 @@ body {
     color: white;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    /* user-select: none;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; */
+    -ms-user-select: none;
 }
 
 .container {
