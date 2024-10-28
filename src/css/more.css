@@ -14,6 +14,10 @@ body {
     color: white;
     overflow-x: hidden;
     width: 100vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 * {
@@ -22,10 +26,10 @@ body {
     box-sizing: border-box;
 }
 
-::selection {
+/* ::selection {
     background-color: #265a8b;
     color: white;
-}
+} */
 
 .logo11 {
     position: absolute;
