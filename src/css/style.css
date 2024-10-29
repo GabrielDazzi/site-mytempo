@@ -208,22 +208,21 @@ button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(60, 141, 188, 0.8);
     border-radius: 5px;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 500;
 }
 
 .carousel-prev {
     left: 10px;
-    z-index: 1000;
 }
 
 .carousel-next {
     right: 10px;
-    z-index: 1000;
 }
 
 .content0 {

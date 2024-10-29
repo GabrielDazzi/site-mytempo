@@ -71,7 +71,7 @@ a {
 }
 
 body {
-    background: linear-gradient(90deg, #5144b4, #231367);
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
     color: white;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
@@ -268,7 +268,7 @@ h1 {
 }
 
 footer {
-    background: linear-gradient(90deg, #5144b4, #231367);
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -295,7 +295,7 @@ footer p {
         right: 0;
         width: 40%;
         border-radius: 0% 0% 0px 10px;
-        background: linear-gradient(90deg, #5144b4, #231367);
+        background: linear-gradient(90deg, #3C8DBC, #2d6688);
         align-items: center;
         justify-content: space-evenly;
         overflow: hidden;
