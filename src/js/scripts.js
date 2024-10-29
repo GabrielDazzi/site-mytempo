@@ -187,3 +187,21 @@ document.addEventListener('DOMContentLoaded', function () {
         navMenu.classList.toggle('nav-active');
     });
 });
+
+const images = document.querySelectorAll('.carousel-images img');
+let currentIndex = 0;
+
+function showImage(index) {
+    const offset = -index * 100;
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+}
+
+document.querySelector('.carousel-prev').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    showImage(currentIndex);
+});
+
+document.querySelector('.carousel-next').addEventListener('click', () => {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    showImage(currentIndex);
+});
