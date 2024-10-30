@@ -43,6 +43,5 @@ function fecharImagem() {
 
   const img = document.getElementById('imagem-grande');
   const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
-  img.style.transform = "scale(1)"; // Esta linha pode ser removida, já que não há zoom
   textModal.forEach(el => el.style.visibility = 'visible');
 }
