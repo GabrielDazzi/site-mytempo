@@ -45,3 +45,15 @@ function fecharImagem() {
   const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
   textModal.forEach(el => el.style.visibility = 'visible');
 }
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-item');
+
+function changeSlide(direction) {
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + direction + slides.length) % slides.length;
+  slides[currentIndex].classList.add('active');
+}
+
+// Inicia o primeiro item visível
+slides[currentIndex].classList.add('active');

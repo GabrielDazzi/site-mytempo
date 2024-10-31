@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+strong {
+    font-size: 20px;
+}
+
 .arrow {
     position: absolute;
     top: 25px;
@@ -63,6 +67,79 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-item {
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.image {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.description {
+  flex: 1;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.description .note {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control.prev {
+  left: -30px;
+}
+
+.carousel-control.next {
+  right: -30px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo11 {
