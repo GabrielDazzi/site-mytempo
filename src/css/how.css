@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 
-strong {
+.strong-1 {
     font-size: 20px;
 }
 
@@ -83,6 +83,7 @@ strong {
   display: none;
   flex-direction: row;
   align-items: flex-start;
+  width: 100%; /* Garante que o item do carrossel ocupe toda a largura disponível */
 }
 
 .carousel-item.active {
@@ -371,6 +372,45 @@ footer p {
         width: 300px;
         text-align: center;
         margin: 255px auto 450px;
+    }
+
+    .carousel {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .carousel-item {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .image img {
+        max-width: 100%; 
+        margin-top: 0;
+    }
+
+    .description {
+        font-size: 14px; 
+        text-align: center;
+    }
+
+    .carousel-control {
+        font-size: 20px;
+        padding: 18px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .strong-1 {
+        font-size: 16px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, 0);
     }
 
     nav ul {
