@@ -83,7 +83,7 @@ a {
   display: none;
   flex-direction: row;
   align-items: flex-start;
-  width: 100%; /* Garante que o item do carrossel ocupe toda a largura disponível */
+  width: 100%; 
 }
 
 .carousel-item.active {
@@ -367,6 +367,11 @@ footer p {
     font-size: 16px;
 }
 
+.p-titulos {
+    margin-top: -83px;
+    font-size: 22px;
+}
+
 @media (max-width: 768px) {
     .titulo {
         width: 300px;
@@ -470,6 +475,11 @@ footer p {
 
     .description-img {
         display: none;
+    }
+
+    .p-titulos {
+        margin-top: -93px;
+        font-size: 18px;
     }
 }
 
