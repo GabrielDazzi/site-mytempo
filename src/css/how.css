@@ -120,11 +120,12 @@ a {
 .carousel-control {
   position: absolute;
   top: 50%;
+  width: 46px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
   font-size: 24px;
   border-radius: 50%;
@@ -137,10 +138,6 @@ a {
 
 .carousel-control.next {
   right: -30px;
-}
-
-.carousel-control:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo11 {
