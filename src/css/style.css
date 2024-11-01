@@ -173,6 +173,10 @@ button {
     background-color: #72a1bd;
 }
 
+.SM-button-1 {
+    margin-top: -90px;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -310,6 +314,41 @@ button {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.tutorias {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .Tutorial {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .Tutorial:hover {
+    transform: translateY(-10px);
+  }
+  
+  .Tutorial h3 {
+    font-size: 22px;
+    color: #333; 
+    margin-bottom: 10px;
+  }
+  
+  .Tutorial p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
 
 .contents {
     position: relative;
