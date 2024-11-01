@@ -46,14 +46,20 @@ function fecharImagem() {
   textModal.forEach(el => el.style.visibility = 'visible');
 }
 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.carousel-item');
+document.querySelectorAll('.carousel').forEach((carousel) => {
+  let currentIndex = 0;
+  const slides = carousel.querySelectorAll('.carousel-item');
 
-function changeSlide(direction) {
-  slides[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + direction + slides.length) % slides.length;
+  function changeSlide(direction) {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + direction + slides.length) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }
+
+  // Inicia o primeiro item visível
   slides[currentIndex].classList.add('active');
-}
 
-// Inicia o primeiro item visível
-slides[currentIndex].classList.add('active');
+  // Adiciona os event listeners para os botões de controle
+  carousel.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+  carousel.querySelector('.next').addEventListener('click', () => changeSlide(1));
+});
