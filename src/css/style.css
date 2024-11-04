@@ -1,3 +1,4 @@
+
 /* ::selection {
     color: white;
     background-color: #3C8DBC;
@@ -14,6 +15,7 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
 
 .fade-in.show {
     opacity: 1;
@@ -51,6 +53,7 @@ header div {
     align-items: center;
     margin-right: auto;
 }
+
 
 header img {
     height: 40px;
@@ -467,6 +470,7 @@ form textarea {
     border-radius: 5px;
 }
 
+
 form button {
     padding: 10px;
     background-color: #3C8DBC;
@@ -580,6 +584,7 @@ footer p {
 /* .O {
     height: 40px;
 } */
+
 
 @keyframes fadeInUp {
     from {
