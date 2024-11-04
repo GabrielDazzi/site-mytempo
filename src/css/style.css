@@ -123,7 +123,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     color: #ffffff;
-    background-image: url('/src/img/bk.jpg');
+    background-image: url(../img/bk.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
