@@ -450,9 +450,11 @@ button {
 
 .sectiono {
     padding: 50px 20px;
-    max-width: 1400px;
+    max-width: 600px;
+    border-radius: 10px;
     text-align: center;
     margin: 0 auto;
+    background-color: #ededed;
 }
 
 form {
