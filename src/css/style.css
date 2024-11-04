@@ -676,6 +676,11 @@ footer p {
         margin-left: 20px;
     }
 
+    .sectiono {
+        padding: 50px 20px;
+        max-width: 350px;
+    }
+
     .services {
         grid-template-columns: 1fr;
     }
