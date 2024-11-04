@@ -206,30 +206,3 @@ document.querySelector('.carousel-next').addEventListener('click', () => {
     showImage(currentIndex);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.hero-slide');
-    const prevButton = document.querySelector('.slider-control.prev');
-    const nextButton = document.querySelector('.slider-control.next');
-    let currentIndex = 0;
-    const totalSlides = slides.length;
-
-    function updateSlide(index) {
-        document.querySelector('.hero-slider').style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-        updateSlide(currentIndex);
-    });
-
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-        updateSlide(currentIndex);
-    });
-
-    // Alterna automaticamente a cada 5 segundos
-    setInterval(() => {
-        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-        updateSlide(currentIndex);
-    }, 5000);
-});
