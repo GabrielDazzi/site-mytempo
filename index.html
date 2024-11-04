@@ -153,20 +153,16 @@
         <section id="contact" class="sectiono">
             <h2>Contato</h2>
             <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="n-at">Quantidade de Atletas:</label>
-                <input type="n-at" id="n-at" name="n-at" required>
-
-                <label for="num">Número do Organizador:</label>
-                <input type="num" id="num" name="num" required>
-
-                <label for="ne">Nome do Evento:</label>
-                <input type="ne" id="ne" name="ne" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                
+                <input type="number" id="n-at" name="n-at" placeholder="Digite a quantidade de atletas" required>
+                
+                <input type="text" id="num" name="num" placeholder="Digite o número do organizador" required>
+                
+                <input type="text" id="ne" name="ne" placeholder="Digite o nome do evento" required>
+                
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                
 
                 <button type="submit" class="btn"><strong>Enviar</strong></button>
             </form>
