@@ -1,4 +1,3 @@
-
 /* ::selection {
     color: white;
     background-color: #3C8DBC;
@@ -54,6 +53,7 @@ header div {
     margin-right: auto;
 }
 
+/*Ana, te amo meu amor*/
 
 header img {
     height: 40px;
@@ -242,7 +242,7 @@ button {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     background-size: cover;
     margin: 40px 150px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .content0.show {
@@ -506,28 +506,28 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     color: #ffffff;
     flex-wrap: wrap;
-  }
-  
-  .footer-d {
+}
+
+.footer-d {
     text-align: right;
     color: #ffffff;
-    margin-right: 40px; 
-  }  
-  
-  .footer-t {
+    margin-right: 40px;
+}
+
+.footer-t {
     margin: 0;
     font-size: 18px;
-  }
-  
-  .footer-p {
+}
+
+.footer-p {
     margin: 5px 0;
-  }
-  
+}
+
 
 /* .O {
     height: 40px;
@@ -664,24 +664,24 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
         gap: 10px;
-        padding: 15px; 
-      }
-    
-      .footer-d {
+        padding: 15px;
+    }
+
+    .footer-d {
         text-align: center;
-      }
-    
-      .footer-t {
+    }
+
+    .footer-t {
         font-size: 16px;
-      }
-    
-      .footer-p {
+    }
+
+    .footer-p {
         font-size: 14px;
-        margin: 3px 0; 
-      }
+        margin: 3px 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
