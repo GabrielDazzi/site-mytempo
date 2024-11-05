@@ -361,6 +361,7 @@ footer {
     justify-content: space-between; 
     align-items: center; 
     padding: 20px;
+    margin-bottom: -100px;
     color: #ffffff;
     flex-wrap: wrap;
 }
@@ -415,7 +416,7 @@ footer {
     .titulo {
         width: 300px;
         text-align: center;
-        margin: 255px auto 450px;
+        margin: 100px auto 100px;
     }
 
     .carousel {
