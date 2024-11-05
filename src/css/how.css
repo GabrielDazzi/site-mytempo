@@ -20,6 +20,26 @@ a {
     -webkit-transform: rotate(135deg);
 }
 
+.container {
+    position: fixed;
+    top: 100vh; 
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container.visible {
+    top: 0;
+    opacity: 1;
+    height: 100vh;
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
+    z-index: 10;
+  }
+
 .accordion {
     background-color: #0000000e;
     color: #ffffff;
@@ -159,12 +179,6 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 header {
@@ -330,7 +344,7 @@ h1 {
 }
 
 .titulo {
-    margin: 350px auto 600px;
+    margin: 350px auto 300px;
     width: 500px;
     text-align: center;
 }

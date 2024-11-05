@@ -63,3 +63,13 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
   carousel.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
   carousel.querySelector('.next').addEventListener('click', () => changeSlide(1));
 });
+
+document.addEventListener("scroll", () => {
+  const container = document.querySelector(".container");
+
+  if (window.scrollY > 0) {
+    container.classList.add("visible");
+  } else {
+    container.classList.remove("visible");
+  }
+});
