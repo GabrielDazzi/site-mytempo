@@ -331,7 +331,7 @@ button {
 .Tutorial {
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px;
     text-align: left;
@@ -454,7 +454,7 @@ button {
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #f2f1f1;
 }
 
 form {
@@ -664,7 +664,7 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column;
+        flex-direction: column; 
         text-align: center;
         gap: 10px;
         padding: 15px; 
