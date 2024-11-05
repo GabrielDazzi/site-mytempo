@@ -37,44 +37,6 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Função para abrir ou fechar a modal de contato
-function toggleContactModal() {
-    const contactModal = document.getElementById('contact-modal');
-    if (contactModal) {
-        contactModal.style.display = (contactModal.style.display === 'flex') ? 'none' : 'flex';
-    }
-}
-
-window.toggleContactModal = toggleContactModal;
-
-const contactBtn = document.querySelector('.contact-btn');
-const closeBtn = document.querySelector('.close-btn');
-const contactLink = document.getElementById('contact-link'); // Referência ao link "Contato"
-
-// Configura eventos para abrir e fechar a modal de contato
-if (contactBtn) {
-    contactBtn.addEventListener('click', toggleContactModal);
-}
-
-if (closeBtn) {
-    closeBtn.addEventListener('click', toggleContactModal);
-}
-
-if (contactLink) {
-    contactLink.addEventListener('click', function (event) {
-        event.preventDefault(); // Impede o comportamento padrão do link
-        toggleContactModal(); // Abre a modal
-    });
-}
-
-// Fecha a modal ao clicar fora dela
-window.addEventListener('click', function (event) {
-    const contactModal = document.getElementById('contact-modal');
-    if (contactModal && event.target === contactModal) {
-        contactModal.style.display = 'none';
-    }
-});
-
 // Função para verificar se o elemento está visível na janela
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();

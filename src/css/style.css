@@ -504,84 +504,29 @@ footer {
     position: relative;
 }
 
-footer p {
-    font-size: 16px;
-}
-
-                                                                                                                                                                                                                                                                                                                                                                            /* Ana, eu te amo meu amor <3 */
-.contact-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #cecece;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+.footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.contact-btn:hover {
-    background-color: #d1d1d1;
-    transform: scale(1.1);
-}
-
-.contact-modal {
-    display: none;
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    width: 300px;
-    z-index: 1000;
-}
-
-.contact-modal-content {
-    background-color: #fff;
-    border-radius: 10px;
-    width: 300px;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
-    text-align: center;
-    position: relative;
-    animation: slideIn 0.3s ease-out;
-    border: 2px solid #5094bb;
-}
-
-.contact-modal-content h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.contact-modal-content p {
-    font-size: 16px;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    background: #3C8DBC;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.close-btn:hover {
-    background-color: #5094bb;
-}
-
+    color: #ffffff;
+  }
+  
+  .footer-d {
+    text-align: right;
+    color: #ffffff;
+    margin-right: 40px; 
+  }  
+  
+  .footer-t {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .footer-p {
+    margin: 5px 0;
+  }
+  
 
 /* .O {
     height: 40px;
