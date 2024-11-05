@@ -86,10 +86,13 @@ a {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
+    opacity: 0;
+    transform: translateX(20px);
 }
 
 .carousel-item.active {
     display: flex;
+    animation: slideIn 0.5s ease forwards;
 }
 
 .image {
@@ -386,6 +389,32 @@ footer {
 .p-titulos {
     margin-top: -83px;
     font-size: 22px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-item-exit {
+    animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
 }
 
 @media (max-width: 768px) {
