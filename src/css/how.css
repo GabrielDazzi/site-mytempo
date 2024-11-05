@@ -352,18 +352,34 @@ h1 {
 }
 
 footer {
-    background: linear-gradient(90deg, #3C8DBC, #2d6688);
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-    position: absolute;
-    height: 60px;
-    width: 98%;
+    position: relative;
 }
 
-footer p {
-    font-size: 16px;
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    color: #ffffff;
+}
+  
+  .footer-d {
+    text-align: right;
+    color: #ffffff;
+    margin-right: 40px; 
+}  
+  
+  .footer-t {
+    margin: 0;
+    font-size: 18px;
+}
+  
+  .footer-p {
+    margin: 5px 0;
 }
 
 .p-titulos {
@@ -445,10 +461,6 @@ footer p {
         justify-content: space-around;
         opacity: 1;
         transition: opacity 0.3s ease;
-    }
-
-    footer {
-        width: 95%;
     }
 
     .panel {

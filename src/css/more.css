@@ -163,10 +163,33 @@ footer {
     background-color: #173857;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 50px;
     position: relative;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .footer-d {
+    text-align: right;
+    color: #ffffff;
+    margin-right: 40px; 
+  }  
+  
+  .footer-t {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .footer-p {
+    margin: 5px 0;
+  }
 
 footer p {
     font-size: 14px;
