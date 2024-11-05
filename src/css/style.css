@@ -510,6 +510,7 @@ footer {
     align-items: center;
     padding: 20px;
     color: #ffffff;
+    margin-bottom: -20px;
     flex-wrap: wrap;
 }
 

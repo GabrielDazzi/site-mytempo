@@ -175,6 +175,7 @@ footer {
     padding: 20px;
     color: #ffffff;
     flex-wrap: wrap;
+    margin-bottom: -20px;
   }
   
   .footer-d {
