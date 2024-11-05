@@ -510,6 +510,7 @@ footer {
     align-items: center; 
     padding: 20px;
     color: #ffffff;
+    flex-wrap: wrap;
   }
   
   .footer-d {
@@ -661,6 +662,26 @@ footer {
     #mapa-brasil {
         height: 30px;
     }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 15px; 
+      }
+    
+      .footer-d {
+        text-align: center;
+      }
+    
+      .footer-t {
+        font-size: 16px;
+      }
+    
+      .footer-p {
+        font-size: 14px;
+        margin: 3px 0; 
+      }
 }
 
 @media screen and (max-width: 480px) {
