@@ -153,12 +153,12 @@ a {
 body {
     background: linear-gradient(90deg, #3C8DBC, #2d6688);
     color: white;
-    padding: 20px;
     font-family: 'Poppins', sans-serif;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    padding: 20px;
 }
 
 header {
