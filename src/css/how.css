@@ -324,7 +324,7 @@ h1 {
 }
 
 .titulo {
-    margin: 200px auto 200px;
+    margin: 300px auto 300px;
     width: 500px;
     text-align: center;
 }
@@ -419,7 +419,7 @@ footer {
     .titulo {
         width: 300px;
         text-align: center;
-        margin: 100px auto 100px;
+        margin: 150px auto 150px;
     }
 
     .carousel {
