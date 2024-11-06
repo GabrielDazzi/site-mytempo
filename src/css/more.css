@@ -176,6 +176,7 @@ footer {
     color: #ffffff;
     flex-wrap: wrap;
     margin-bottom: -20px;
+    margin-top: -20px;
   }
   
   .footer-d {
@@ -293,6 +294,7 @@ footer p {
         text-align: center;
         gap: 10px;
         padding: 15px; 
+        
       }
     
       .footer-d {

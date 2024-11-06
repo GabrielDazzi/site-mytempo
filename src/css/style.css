@@ -500,7 +500,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
     position: relative;
 }
 
@@ -511,6 +510,7 @@ footer {
     padding: 20px;
     color: #ffffff;
     margin-bottom: -20px;
+    margin-top: -20px;
     flex-wrap: wrap;
 }
 
