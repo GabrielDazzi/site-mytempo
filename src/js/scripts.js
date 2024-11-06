@@ -105,7 +105,6 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 // Controle do menu hambúrguer
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav ul');
@@ -138,4 +137,3 @@ document.querySelector('.carousel-next').addEventListener('click', () => {
     currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
     showImage(currentIndex);
 });
-
