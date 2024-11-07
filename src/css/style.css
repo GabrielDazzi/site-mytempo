@@ -280,6 +280,13 @@ button {
     border-radius: 10px;
 }
 
+.map-text {
+    margin: 0 auto; 
+    max-width: 600px; 
+    text-align: center;
+    padding: 0 15px;
+}
+
 #servicos {
     background-color: #ffffff;
     padding: 60px 20px;
@@ -650,6 +657,13 @@ footer {
         padding: 0 10px;
     }
 
+    .map-text {
+        max-width: 100%; 
+        padding: 0 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .hero {
         background-image: url('/src/img/background-temp-retrato.jpg');
         background-repeat: no-repeat;
@@ -775,6 +789,12 @@ footer {
         margin-left: 40px;
     }
 
+    .map-titulo {
+        margin: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .footer-t {
         font-size: 16px;
     }
@@ -866,6 +886,16 @@ footer {
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
         transform: translateY(-3px);
+    }
+
+    .map-titulo {
+        margin: 60px 20px 10px 20px;
+        font-size: 1.5em;
+
+    }
+
+    .map-text {
+        padding: 0 5px; 
     }
 
 }
