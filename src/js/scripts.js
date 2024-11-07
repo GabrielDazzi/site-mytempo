@@ -71,7 +71,7 @@ window.addEventListener('load', checkVisibility);
 
 // Função para aplicar a animação de fade-in
 function applyFadeInAnimation() {
-    const elementsToFade = document.querySelectorAll('.content1, .contents, .container, .sectiono');
+    const elementsToFade = document.querySelectorAll('.content1, .contents, .container, .sectiono, #tutorial');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
