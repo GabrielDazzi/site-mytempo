@@ -370,20 +370,21 @@ button {
 
 .parceiros {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 5rem;
-    padding: 20px;
-    flex-wrap: wrap;
+    padding: 15px;
+    flex-wrap: wrap; 
 }
 
 .parceiro {
     text-align: center;
     margin: 10px;
+    flex: 1 1 180px; 
 }
 
 .parceiro img {
-    width: 150px;
+    width: 180px;
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s ease;
@@ -430,7 +431,6 @@ button {
 }
 
 .Modalidades-P div:hover {
-    background-color: #3C8DBC;
     color: white;
     border-color: #3C8DBC;
 }
@@ -506,8 +506,7 @@ button {
 
 .map-titulo {
     text-align: center;
-    margin: 130px 0 20px;
-    margin-bottom: 20px;
+    margin: 130px 0 50px 0;
     width: 100%;
 }
 
@@ -664,6 +663,14 @@ footer {
         margin-right: 20px;
     }
 
+    .parceiros {
+        justify-content: center;
+    }
+
+    .parceiro img {
+        width: 150px; 
+    }
+
     .hero {
         background-image: url('/src/img/background-temp-retrato.jpg');
         background-repeat: no-repeat;
@@ -810,6 +817,14 @@ footer {
 
     .hero h1 {
         font-size: 28px;
+    }
+
+    .parceiro {
+        flex: 1 1 100%; 
+    }
+
+    .parceiro img {
+        width: 120px;
     }
 
     .hero {
