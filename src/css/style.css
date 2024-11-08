@@ -504,9 +504,10 @@ button {
     background-color: #0C142C;
 }
 
-.map-titulo {
+.titulo-map {
     text-align: center;
-    margin: 130px 0 50px 0;
+    font-size: 1.2rem;
+    margin: 130px 0 15px 0;
     width: 100%;
 }
 
@@ -796,9 +797,8 @@ footer {
         margin-left: 40px;
     }
 
-    .map-titulo {
-        margin: 60px;
-        margin-left: 20px;
+    .titulo-map {
+        text-align: center;
         margin-right: 20px;
     }
 
@@ -903,7 +903,7 @@ footer {
         transform: translateY(-3px);
     }
 
-    .map-titulo {
+    .titulo-map {
         margin: 60px 20px 10px 20px;
         font-size: 1.5em;
 
