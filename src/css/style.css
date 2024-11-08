@@ -507,7 +507,7 @@ button {
 .titulo-map {
     text-align: center;
     font-size: 1.2rem;
-    margin: 130px 0 15px 0;
+    margin: 100px 0 15px 0;
     width: 100%;
 }
 
@@ -799,7 +799,7 @@ footer {
 
     .titulo-map {
         text-align: center;
-        margin-right: 20px;
+        font-size: 16px;
     }
 
     .footer-t {
@@ -904,8 +904,8 @@ footer {
     }
 
     .titulo-map {
-        margin: 60px 20px 10px 20px;
-        font-size: 1.5em;
+        margin: 60px 40px 10px 40px;
+        font-size: 16px;
 
     }
 
