@@ -21,7 +21,7 @@
 .Modalidades-P div {
     margin-right: 30px;
 }
-    
+
 @keyframes scroll-horizontal {
     0% {
         transform: translateX(0);
