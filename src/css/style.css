@@ -650,7 +650,7 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 
     header {
         height: 70px;
@@ -662,14 +662,6 @@ footer {
         padding: 0 10px;
         margin-left: 20px;
         margin-right: 20px;
-    }
-
-    .parceiros {
-        justify-content: center;
-    }
-
-    .parceiro img {
-        width: 150px; 
     }
 
     .hero {
@@ -819,14 +811,6 @@ footer {
         font-size: 28px;
     }
 
-    .parceiro {
-        flex: 1 1 100%; 
-    }
-
-    .parceiro img {
-        width: 120px;
-    }
-
     .hero {
         background-image: url('/src/img/background-temp-retrato.jpg');
         background-repeat: no-repeat;
@@ -913,4 +897,4 @@ footer {
         padding: 0 5px; 
     }
 
-}
+} */
