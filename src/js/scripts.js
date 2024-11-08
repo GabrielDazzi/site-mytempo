@@ -105,7 +105,7 @@ document.querySelectorAll('nav a[href^="#"], a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Controle do menu hambúrguer
+// Menu hambúrguer
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav ul');
 const body = document.body;
