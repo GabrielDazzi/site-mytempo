@@ -1,0 +1,32 @@
+.Modalidades-P {
+    display: flex;
+    overflow: hidden; 
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    animation: scroll-horizontal 20s linear infinite;
+}
+
+.Modalidades-P div {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.Modalidades-P img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Modalidades-P div {
+    margin-right: 30px;
+}
+    
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
