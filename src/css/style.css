@@ -365,6 +365,7 @@ button {
     position: relative;
     padding: 30px 10px;
     margin-top: 100px;
+    margin-bottom: -50px;
     text-align: center;
 }
 
