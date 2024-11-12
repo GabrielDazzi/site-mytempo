@@ -411,7 +411,7 @@ button {
 }
 
 .Modalidades {
-    background: #00000005;
+    background: #00000003;
     height: 280px;
     margin: 100px auto;
     overflow: hidden;
@@ -431,7 +431,7 @@ button {
 }
 
 .Modalidades .Modalidades-P {
-    /* animation: scroll 25s linear infinite; */
+    animation: scroll 25s linear infinite;
     display: flex;
     width: calc(250px * 18);
 }
@@ -654,7 +654,22 @@ footer {
 
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .Modalidades .Modalidades-P {
+        animation-play-state: running;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .Modalidades .Modalidades-P {
+        width: calc(200px * 18);
+        gap: 5px;
+      }
+
+    .Modalidades .modalidade {
+        width: 200px;
+    }
 
     header {
         height: 70px;
