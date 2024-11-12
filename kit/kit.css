@@ -74,6 +74,7 @@ h3 {
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 .image-container img {
@@ -107,6 +108,14 @@ footer {
     border-top: 2px solid #00b4d8;
 }
 
+.certo, .errado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto; 
+}
+
 .certo {
     background-color: aquamarine;
     position: relative;
@@ -120,7 +129,7 @@ footer {
 }
 
 .certo::after {
-    content: "Certo";
+    content: "Correto";
     color: white;
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 5px;
@@ -171,19 +180,19 @@ footer {
     .container {
         padding: 15px;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     h3 {
         font-size: 1.2rem;
     }
-    
+
     p {
         font-size: 1rem;
     }
@@ -192,25 +201,29 @@ footer {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .certo, .errado {
-        height: 340px; 
+        height: 340px;
     }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
     h1 {
         font-size: 1.8rem;
     }
-    
+
     h2 {
         font-size: 1.4rem;
     }
-    
+
     h3 {
         font-size: 1.1rem;
     }
-    
+
     p {
         font-size: 0.95rem;
     }
@@ -220,7 +233,7 @@ footer {
     }
 
     .certo, .errado {
-        height: 290px; 
+        height: auto;
     }
 }
 
@@ -228,20 +241,30 @@ footer {
     .container {
         padding: 10px;
     }
-    
+
     h1 {
         font-size: 1.5rem;
     }
 
-    .image-container {
-        flex-direction: column;
+    h2 {
+        font-size: 1.3rem;
     }
-    
-    .certo, .errado {
-        height: 235px;
+
+    h3 {
+        font-size: 1rem;
     }
-    
+
     p {
         font-size: 0.85rem;
     }
+
+    .image-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .certo, .errado {
+        height: auto;
+    }
 }
+
