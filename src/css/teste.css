@@ -86,15 +86,6 @@ nav ul li a:hover {
     width: 960px;
   }
   
-  .Modalidades::before,
-  .Modalidades::after {
-    content: "";
-    height: 250px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-  
   .Modalidades::after {
     right: 0;
     top: 0;

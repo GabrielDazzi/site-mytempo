@@ -405,7 +405,7 @@ button {
 }
 
 .Modalidades-H {
-    margin: 20px auto 20px auto;
+    margin: 20px auto 40px auto;
     position: relative;
     text-align: center;
 }
@@ -417,15 +417,6 @@ button {
     overflow: hidden;
     position: relative;
     width: 100%;
-}
-
-.Modalidades::before,
-.Modalidades::after {
-    content: "";
-    height: 250px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
 }
 
 .Modalidades::after {
@@ -440,7 +431,7 @@ button {
 }
 
 .Modalidades .Modalidades-P {
-    /* animation: scroll 15s linear infinite; */
+    /* animation: scroll 25s linear infinite; */
     display: flex;
     width: calc(250px * 18);
 }
