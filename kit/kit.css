@@ -10,6 +10,10 @@ body {
     color: #e0e0e0;
 }
 
+strong {
+    color: #ef476f;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
