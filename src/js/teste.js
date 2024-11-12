@@ -1,20 +1,21 @@
-const container = document.querySelector('.Modalidades-P');
-let isDuplicating = false;
+const modalidadesContainer = document.querySelector('.Modalidades-P');
+const items = Array.from(modalidadesContainer.children);
 
+// Função para duplicar os itens no final do container
 function duplicateItems() {
-    const scrollWidth = container.scrollWidth;
-    const clientWidth = container.clientWidth;
-    const scrollLeft = container.scrollLeft;
-
-    // Verifica se está perto do final e se já não está duplicando
-    if (scrollLeft + clientWidth >= scrollWidth * 0.9 && !isDuplicating) {
-        isDuplicating = true; // Evita duplicações múltiplas enquanto processa
-        const items = container.innerHTML; // Armazena os itens atuais
-        container.innerHTML += items; // Duplica os itens no final
-
-        isDuplicating = false; // Libera para futuras duplicações
-    }
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        modalidadesContainer.appendChild(clone);
+    });
 }
 
-// Monitora o scroll e chama a função de duplicação
-container.addEventListener('scroll', duplicateItems);
+// Monitora a posição de rolagem para saber quando duplicar
+modalidadesContainer.addEventListener('scroll', () => {
+    const scrollPosition = modalidadesContainer.scrollLeft;
+    const maxScrollPosition = modalidadesContainer.scrollWidth - modalidadesContainer.clientWidth;
+
+    // Quando chega ao final do container, duplicar os itens
+    if (scrollPosition >= maxScrollPosition - 1) {
+        duplicateItems();
+    }
+});
