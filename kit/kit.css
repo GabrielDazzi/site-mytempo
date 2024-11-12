@@ -106,3 +106,142 @@ footer {
     color: #00b4d8;
     border-top: 2px solid #00b4d8;
 }
+
+.certo {
+    background-color: aquamarine;
+    position: relative;
+    transition: background-color 0.3s ease;
+    height: 390px;
+    border-radius: 10px;
+}
+
+.certo:hover {
+    background-color: rgb(90, 183, 152); 
+}
+
+.certo::after {
+    content: "Certo";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.certo:hover::after {
+    opacity: 1; 
+}
+
+.errado {
+    background-color: #ef476f;
+    position: relative; 
+    border-radius: 10px;
+    height: 390px;
+    transition: background-color 0.3s ease;
+}
+
+.errado:hover {
+    background-color: #b83652; 
+}
+
+.errado::after {
+    content: "Errado";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.errado:hover::after {
+    opacity: 1; 
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .certo, .errado {
+        height: 340px; 
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+
+    .image-container {
+        gap: 10px;
+    }
+
+    .certo, .errado {
+        height: 290px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+    
+    .certo, .errado {
+        height: 235px;
+    }
+    
+    p {
+        font-size: 0.85rem;
+    }
+}
