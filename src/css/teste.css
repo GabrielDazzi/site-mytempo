@@ -79,7 +79,7 @@ nav ul li a:hover {
   .Modalidades {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 250px;
+    height: 280px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -107,9 +107,13 @@ nav ul li a:hover {
   }
   
   .Modalidades .Modalidades-P {
-    animation: scroll 1000s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: calc(250px * 18);
+  }
+  
+  .Modalidades .Modalidades-P:hover {
+    animation-play-state: paused;
   }
   
   .Modalidades .modalidade {

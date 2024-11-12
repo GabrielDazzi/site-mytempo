@@ -281,8 +281,8 @@ button {
 }
 
 .map-text {
-    margin: 0 auto; 
-    max-width: 600px; 
+    margin: 0 auto;
+    max-width: 600px;
     text-align: center;
     padding: 0 15px;
 }
@@ -374,13 +374,13 @@ button {
     margin-top: 20px;
     margin-bottom: 5rem;
     padding: 15px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .parceiro {
     text-align: center;
     margin: 10px;
-    flex: 1 1 180px; 
+    flex: 1 1 180px;
 }
 
 .parceiro img {
@@ -396,58 +396,67 @@ button {
 
 @keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-    100% {
-      transform: translateX(calc(-250px * 9));
-    }
-  }
 
-  .Modalidades-H {
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.Modalidades-H {
     margin: 20px auto 20px auto;
     position: relative;
     text-align: center;
-  }
-  
-  .Modalidades {
+}
+
+.Modalidades {
     background: #00000005;
-    height: 250px;
+    height: 280px;
     margin: 100px auto;
     overflow: hidden;
     position: relative;
     width: 100%;
-  }
-  
-  .Modalidades::before,
-  .Modalidades::after {
+}
+
+.Modalidades::before,
+.Modalidades::after {
     content: "";
     height: 250px;
     position: absolute;
     width: 200px;
     z-index: 2;
-  }
-  
-  .Modalidades::after {
+}
+
+.Modalidades::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
-  }
-  
-  .Modalidades::before {
+}
+
+.Modalidades::before {
     left: 0;
     top: 0;
-  }
-  
-  .Modalidades .Modalidades-P {
+}
+
+.Modalidades .Modalidades-P {
     /* animation: scroll 15s linear infinite; */
     display: flex;
     width: calc(250px * 18);
-  }
-  
-  .Modalidades .modalidade {
+}
+
+.Modalidades .Modalidades-P:hover {
+    animation-play-state: paused;
+}
+
+.Modalidades .modalidade {
     height: 100px;
     width: 250px;
-  }
+}
+
+.modalidade>p {
+    max-width: 150px;
+}
 
 .mapa-legenda {
     display: flex;
@@ -662,7 +671,7 @@ footer {
     }
 
     .map-text {
-        max-width: 100%; 
+        max-width: 100%;
         padding: 0 10px;
         margin-left: 20px;
         margin-right: 20px;
@@ -898,7 +907,7 @@ footer {
     }
 
     .map-text {
-        padding: 0 5px; 
+        padding: 0 5px;
     }
 
 }
