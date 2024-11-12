@@ -107,7 +107,7 @@ nav ul li a:hover {
   }
   
   .Modalidades .Modalidades-P {
-    /* animation: scroll 15s linear infinite; */
+    animation: scroll 1000s linear infinite;
     display: flex;
     width: calc(250px * 18);
   }
