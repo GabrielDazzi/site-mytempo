@@ -202,7 +202,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin: 150px auto;
     max-width: 80%;
     max-height: 80%;
 }
