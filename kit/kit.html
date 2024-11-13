@@ -22,7 +22,8 @@
             <p class="warning">Certifique-se <span class="highlight">dos dados</span> pessoais e participação impressos
                 no numeral.</p>
             <div class="image-container">
-                <img src="/src/kit-img/Screenshot_2024-11-12_at_11.47.22-removebg-preview.png" alt="Número de Peito">
+                <img src="/src/kit-img/Screenshot_2024-11-12_at_11.47.22-removebg-preview.png" alt="Número de Peito" 
+                onclick="abrirImagem('/src/kit-img/Screenshot_2024-11-12_at_11.47.22-removebg-preview.png')">
             </div>
         </section>
 
@@ -90,7 +91,15 @@
             </div>
         </section> -->
 
-        
+
+        <div id="modal" class="modal">
+            <span class="fechar" onclick="fecharImagem()">&times;</span>
+            <img class="imagem-grande" id="imagem-grande" src="">
+        </div>
+
+  <script src="kit.js"></script>
+
+
         <footer>
         </footer>
     </div>
