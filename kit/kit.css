@@ -46,7 +46,8 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.number-section, .chip-section {
+.number-section,
+.chip-section {
     text-align: center;
 }
 
@@ -112,12 +113,13 @@ footer {
     border-top: 2px solid #00b4d8;
 }
 
-.certo, .errado {
+.certo,
+.errado {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .certo {
@@ -129,55 +131,55 @@ footer {
 }
 
 .certo:hover {
-    background-color: rgb(90, 183, 152); 
+    background-color: rgb(90, 183, 152);
 }
 
 .certo::after {
     content: "Correto";
     color: white;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
     border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .certo:hover::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .errado {
     background-color: #ef476f;
-    position: relative; 
+    position: relative;
     border-radius: 10px;
     height: 390px;
     transition: background-color 0.3s ease;
 }
 
 .errado:hover {
-    background-color: #b83652; 
+    background-color: #b83652;
 }
 
 .errado::after {
     content: "Errado";
     color: white;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
     border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .errado:hover::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .modal {
@@ -241,7 +243,8 @@ footer {
         gap: 15px;
     }
 
-    .certo, .errado {
+    .certo,
+    .errado {
         height: 340px;
     }
 
@@ -279,7 +282,8 @@ footer {
         gap: 10px;
     }
 
-    .certo, .errado {
+    .certo,
+    .errado {
         height: auto;
     }
 }
@@ -310,8 +314,8 @@ footer {
         gap: 10px;
     }
 
-    .certo, .errado {
+    .certo,
+    .errado {
         height: auto;
     }
 }
-
