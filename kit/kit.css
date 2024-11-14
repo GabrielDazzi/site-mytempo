@@ -205,14 +205,15 @@ footer {
     height: 100%;
     overflow: auto;
     overflow: unset;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #173857d3;
 }
 
 .imagem-grande {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px auto;
+    margin: 130px auto;
+    width: 1000%;
     max-width: 80%;
     max-height: 80%;
 }
