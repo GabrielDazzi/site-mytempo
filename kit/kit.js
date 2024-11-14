@@ -1,20 +1,17 @@
 function abrirImagem(src) {
-    document.getElementById('imagem-grande').src = src;
-    document.getElementById('modal').style.display = 'block';
-    document.body.classList.add('modal-open');
-
+    const modal = document.getElementById('modal');
     const img = document.getElementById('imagem-grande');
-    const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
-
+    
+    img.src = src;
+    modal.classList.add('show');  // Adiciona a classe "show" para exibir a modal
+    document.body.classList.add('modal-open');
 }
 
 function fecharImagem() {
-    document.getElementById('modal').style.display = 'none';
-    document.body.classList.remove('modal-open');
+    const modal = document.getElementById('modal');
 
-    const img = document.getElementById('imagem-grande');
-    const textModal = document.querySelectorAll('.text-modal, .text-modal-2');
-    textModal.forEach(el => el.style.visibility = 'visible');
+    modal.classList.remove('show');  // Remove a classe "show" para iniciar o fade-out
+    document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('load', applyFadeInAnimation); // Aplica ao carregar a página
