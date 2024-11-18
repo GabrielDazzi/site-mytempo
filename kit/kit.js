@@ -24,7 +24,7 @@ function applyFadeInAnimation() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                observer.unobserve(entry.target); // Para observar apenas uma vez
+                observer.unobserve(entry.target);
             }
         });
     });
