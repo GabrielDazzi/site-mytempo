@@ -176,7 +176,7 @@ footer {
 }
 
 .errado::after {
-    content: "Errado";
+    content: "Incorreto";
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
