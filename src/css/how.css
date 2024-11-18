@@ -195,7 +195,6 @@ nav {
 }
 
 .modal {
-    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -203,19 +202,32 @@ nav {
     width: 100%;
     height: 100%;
     overflow: auto;
-    overflow: unset;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #173857d3;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
 }
 
 .imagem-grande {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 150px;
-    margin-right: auto;
+    margin: 130px auto;
+    width: 1000%;
     max-width: 80%;
     max-height: 80%;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .imagem-grande {
+    transform: scale(1);
 }
 
 .fechar {
@@ -360,27 +372,27 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     color: #ffffff;
     margin-top: -20px;
     margin-bottom: -100px;
     flex-wrap: wrap;
 }
-  
-  .footer-d {
+
+.footer-d {
     text-align: right;
     color: #ffffff;
-    margin-right: 0; 
-}  
-  
-  .footer-t {
+    margin-right: 0;
+}
+
+.footer-t {
     margin: 0;
     font-size: 18px;
 }
-  
-  .footer-p {
+
+.footer-p {
     margin: 5px 0;
 }
 
@@ -394,6 +406,7 @@ footer {
         opacity: 0;
         transform: translateX(20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -409,6 +422,7 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
+
     to {
         opacity: 0;
         transform: translateX(-20px);
@@ -525,22 +539,22 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 10px;
-        padding: 15px; 
-      }
-    
-      .footer-d {
+        padding: 15px;
+    }
+
+    .footer-d {
         text-align: center;
         margin-left: 40px;
-      }
-    
-      .footer-t {
+    }
+
+    .footer-t {
         font-size: 16px;
-      }
-    
-      .footer-p {
+    }
+
+    .footer-p {
         font-size: 14px;
-        margin: 3px 0; 
-      }
+        margin: 3px 0;
+    }
 }
 
 @media (min-width: 768px) {
