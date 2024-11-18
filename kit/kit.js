@@ -1,7 +1,7 @@
 function abrirImagem(src) {
     const modal = document.getElementById('modal');
     const img = document.getElementById('imagem-grande');
-    
+
     img.src = src;
     modal.classList.add('show');  // Adiciona a classe "show" para exibir a modal
     document.body.classList.add('modal-open');
