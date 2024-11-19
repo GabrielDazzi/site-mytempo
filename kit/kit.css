@@ -115,15 +115,6 @@ p {
     font-size: 1rem;
 }
 
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
-    background-color: #173857;
-    color: #00b4d8;
-    border-top: 2px solid #00b4d8;
-}
-
 .certo,
 .errado {
     display: flex;
@@ -240,6 +231,14 @@ footer {
     z-index: 1000;
 }
 
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #173857;
+    color: #00b4d8;
+    border-top: 2px solid #00b4d8;
+}
 
 @media (max-width: 1024px) {
     .container {
