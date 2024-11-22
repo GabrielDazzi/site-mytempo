@@ -120,6 +120,10 @@ section {
     border: 2px solid #173857;
 }
 
+.ce {
+    width: 400px;
+}
+
 /* ----------- Modal Styles ----------- */
 .modal {
     position: fixed;
