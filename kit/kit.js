@@ -17,7 +17,6 @@ function fecharImagem() {
     document.body.classList.remove('modal-open'); // Libera o scroll do fundo
 }
 
-// Permite fechar o modal com "Esc" ou clicando fora da imagem
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') fecharImagem();
 });
