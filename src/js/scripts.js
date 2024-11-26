@@ -167,11 +167,10 @@ function togglePause() {
     modalidadesContainer.classList.toggle('pausada');
 
     // Muda o texto do botão conforme o estado
-    const pauseButton = document.getElementById('pauseButton');
     if (modalidadesContainer.classList.contains('pausada')) {
-        pauseButton.textContent = "Retomar";
+        pauseButton.textContent = "play_arrow"; // Ícone de play
     } else {
-        pauseButton.textContent = "Pausar";
+        pauseButton.textContent = "pause"; // Ícone de pause
     }
 }
 
