@@ -137,7 +137,6 @@ document.querySelector('.carousel-next').addEventListener('click', () => {
     currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
     showImage(currentIndex);
 });
-
 const modalidadesContainer = document.querySelector('.Modalidades-P');
 const items = Array.from(modalidadesContainer.children);
 
@@ -159,3 +158,20 @@ modalidadesContainer.addEventListener('scroll', () => {
         duplicateItems();
     }
 });
+
+// Função para alternar o estado de pausa
+function togglePause() {
+    const modalidadesContainer = document.querySelector('.Modalidades-P');
+    
+    // Alterna a classe 'pausada' para pausar ou retomar a animação
+    modalidadesContainer.classList.toggle('pausada');
+
+    // Muda o texto do botão conforme o estado
+    const pauseButton = document.getElementById('pauseButton');
+    if (modalidadesContainer.classList.contains('pausada')) {
+        pauseButton.textContent = "Retomar";
+    } else {
+        pauseButton.textContent = "Pausar";
+    }
+}
+

@@ -412,7 +412,7 @@ button {
 
 .Modalidades {
     background: #00000003;
-    height: 280px;
+    height: 320px;
     margin: 100px auto;
     overflow: hidden;
     position: relative;
@@ -436,10 +436,6 @@ button {
     width: calc(250px * 18);
 }
 
-.Modalidades .Modalidades-P:hover {
-    animation-play-state: paused;
-}
-
 .Modalidades .modalidade {
     height: 100px;
     width: 250px;
@@ -447,6 +443,10 @@ button {
 
 .modalidade>p {
     max-width: 150px;
+}
+
+.Modalidades-P.pausada {
+    animation-play-state: paused;
 }
 
 .mapa-legenda {
@@ -702,6 +702,10 @@ footer {
 
     .Modalidades-H h2 {
         font-size: 1.8em;
+    }
+
+    .Modalidades-P.pausada {
+        animation-play-state: paused;
     }
 
     nav ul {
