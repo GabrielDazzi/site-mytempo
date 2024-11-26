@@ -676,7 +676,7 @@ footer {
     .Modalidades .Modalidades-P {
         width: calc(200px * 18);
         gap: 5px;
-      }
+    }
 
     .Modalidades .modalidade {
         width: 200px;

@@ -162,7 +162,7 @@ modalidadesContainer.addEventListener('scroll', () => {
 // Função para alternar o estado de pausa
 function togglePause() {
     const modalidadesContainer = document.querySelector('.Modalidades-P');
-    
+
     // Alterna a classe 'pausada' para pausar ou retomar a animação
     modalidadesContainer.classList.toggle('pausada');
 
