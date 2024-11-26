@@ -353,7 +353,6 @@ button {
 .Tutorial h3 {
     font-size: 22px;
     color: #333;
-    margin-bottom: 10px;
 }
 
 .Tutorial p {
@@ -364,6 +363,8 @@ button {
 
 .tut-img {
     width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .contents {
@@ -553,7 +554,7 @@ form textarea {
     max-width: 1100px;
     margin: 0 auto;
     width: calc(100% - 40px);
-    height: 460px;
+    height: 760px;
     box-sizing: border-box;
 }
 
@@ -666,6 +667,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    .tut-img {
+        width: 500px;
+        display: none;
+    }
 
     .Modalidades .Modalidades-P {
         width: calc(200px * 18);
