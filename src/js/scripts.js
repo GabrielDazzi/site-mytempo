@@ -173,4 +173,3 @@ function togglePause() {
         pauseButton.textContent = "pause"; // Ícone de pause
     }
 }
-
