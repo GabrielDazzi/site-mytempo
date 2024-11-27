@@ -219,7 +219,7 @@ button {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(60, 141, 188, 0.8);
-    border-radius: 5px;
+    border-radius: 5px ;
     color: white;
     border: none;
     padding: 10px;
@@ -363,7 +363,7 @@ button {
 }
 
 .tut-img {
-    width: 550px;
+    width: 600px;
     border-radius: 10px;
     margin-top: 15px;
 }
