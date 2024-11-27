@@ -383,7 +383,7 @@ button {
     max-width: 1400px;
     margin: 0 auto;
     width: calc(100% - 40px);
-    height: 780px;
+    height: 810px;
     box-sizing: border-box;
     box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.1);
 }
