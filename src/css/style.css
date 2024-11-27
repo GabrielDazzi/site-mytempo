@@ -312,6 +312,10 @@ button {
     margin: 0 auto;
 }
 
+.service p {
+    font-size: 19px;
+}
+
 .service {
     background: #f9f9f9;
     padding: 30px;
@@ -357,7 +361,7 @@ button {
 }
 
 .Tutorial p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #212121;
 }
