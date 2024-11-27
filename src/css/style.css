@@ -388,6 +388,13 @@ button {
     box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.1);
 }
 
+.contents9 {
+    position: relative;
+    padding: 30px 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
 .parceiros {
     display: flex;
     justify-content: space-between;
