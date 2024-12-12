@@ -126,10 +126,10 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     color: #ffffff; */
-    background-image: url(../img2/bk2temp-3.png);
+    background-image: url(../img2/bk2temp-6.png);
     background-size: cover;
-    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
