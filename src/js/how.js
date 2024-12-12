@@ -61,72 +61,72 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
   carousel.querySelector('.next').addEventListener('click', () => changeSlide(1));
 });
 
-// Script para implementar o swiper
-let currentSlide = 0;
+// // Script para implementar o swiper
+// let currentSlide = 0;
 
-function showSlide(index) {
-  const slides = document.querySelectorAll(".carousel-item");
-  const totalSlides = slides.length;
+// function showSlide(index) {
+//   const slides = document.querySelectorAll(".carousel-item");
+//   const totalSlides = slides.length;
 
-  // Garantir que o índice esteja no intervalo
-  if (index >= totalSlides || index < 0) {
-    return; // Não faz nada se o índice estiver fora do intervalo
-  }
+//   // Garantir que o índice esteja no intervalo
+//   if (index >= totalSlides || index < 0) {
+//     return; // Não faz nada se o índice estiver fora do intervalo
+//   }
 
-  currentSlide = index;
+//   currentSlide = index;
 
-  // Remover a classe "active" de todos os slides
-  slides.forEach(slide => slide.classList.remove("active"));
+//   // Remover a classe "active" de todos os slides
+//   slides.forEach(slide => slide.classList.remove("active"));
 
-  // Adicionar a classe "active" ao slide atual
-  slides[currentSlide].classList.add("active");
-}
+//   // Adicionar a classe "active" ao slide atual
+//   slides[currentSlide].classList.add("active");
+// }
 
-function changeSlide(direction) {
-  const slides = document.querySelectorAll(".carousel-item");
-  const totalSlides = slides.length;
+// function changeSlide(direction) {
+//   const slides = document.querySelectorAll(".carousel-item");
+//   const totalSlides = slides.length;
 
-  // Garantir que não ultrapasse os limites
-  const newIndex = currentSlide + direction;
-  if (newIndex >= totalSlides || newIndex < 0) {
-    return;
-  }
+//   // Garantir que não ultrapasse os limites
+//   const newIndex = currentSlide + direction;
+//   if (newIndex >= totalSlides || newIndex < 0) {
+//     return;
+//   }
 
-  showSlide(newIndex);
-}
+//   showSlide(newIndex);
+// }
 
-// Inicializar o swiper
-showSlide(currentSlide);
+// // Inicializar o swiper
+// showSlide(currentSlide);
 
-// Adicionar funcionalidade para teclas de navegação
-document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowLeft") {
-    changeSlide(-1);
-  } else if (event.key === "ArrowRight") {
-    changeSlide(1);
-  }
-});
+// // Adicionar funcionalidade para teclas de navegação
+// document.addEventListener("keydown", (event) => {
+//   if (event.key === "ArrowLeft") {
+//     changeSlide(-1);
+//   } else if (event.key === "ArrowRight") {
+//     changeSlide(1);
+//   }
+// });
 
-// Adicionar funcionalidade de deslizar no mobile
-let touchStartX = 0;
-let touchEndX = 0;
-const carousel = document.querySelector(".carousel");
+// // Adicionar funcionalidade de deslizar no mobile
+// let touchStartX = 0;
+// let touchEndX = 0;
+// const carousel = document.querySelector(".carousel");
 
-carousel.addEventListener("touchstart", (event) => {
-  touchStartX = event.touches[0].clientX;
-});
+// carousel.addEventListener("touchstart", (event) => {
+//   touchStartX = event.touches[0].clientX;
+// });
 
-carousel.addEventListener("touchend", (event) => {
-  touchEndX = event.changedTouches[0].clientX;
-  const deltaX = touchEndX - touchStartX;
+// carousel.addEventListener("touchend", (event) => {
+//   touchEndX = event.changedTouches[0].clientX;
+//   const deltaX = touchEndX - touchStartX;
 
-  if (deltaX > 50 && currentSlide > 0) {
-    changeSlide(-1); // Deslizar para a esquerda
-  } else if (deltaX < -50 && currentSlide < document.querySelectorAll(".carousel-item").length - 1) {
-    changeSlide(1); // Deslizar para a direita
-  }
+//   if (deltaX > 50 && currentSlide > 0) {
+//     changeSlide(-1); // Deslizar para a esquerda
+//   } else if (deltaX < -50 && currentSlide < document.querySelectorAll(".carousel-item").length - 1) {
+//     changeSlide(1); // Deslizar para a direita
+//   }
 
-  // Resetar os valores de toque
-  touchStartX = 0;
-  touchEndX = 0;
-});
+//   // Resetar os valores de toque
+//   touchStartX = 0;
+//   touchEndX = 0;
+// });
