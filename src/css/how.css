@@ -92,6 +92,8 @@ a {
 
 .carousel-item.active {
     display: flex;
+    opacity: 1;
+    transform: translateX(0);
     animation: slideIn 0.5s ease forwards;
 }
 
