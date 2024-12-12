@@ -203,6 +203,10 @@ button {
     margin: 0 auto;
 }
 
+.img1 {
+    width: 1200px;
+}
+
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease;
