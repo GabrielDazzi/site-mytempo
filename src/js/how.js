@@ -61,6 +61,8 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
   carousel.querySelector('.next').addEventListener('click', () => changeSlide(1));
 });
 
+
+
 // // Script para implementar o swiper
 // let currentSlide = 0;
 
