@@ -8,6 +8,7 @@
     rel="stylesheet">
   <link rel="icon" href="/src/img/fav.png">
   <title>Sistema</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/src/css/how.css">
 
 
@@ -44,92 +45,85 @@
     <p class="p-titulos">Aprenda de forma simples os tópicos exclusivo para operação nos seguintes módulos </p>
   </div>
 
-  <button class="accordion">ACESSAR O SISTEMA</button>
-  <div class="panel">
-    <div class="carousel">
-
-      <div class="carousel-item">
+  <!-- Primeiro Painel -->
+<button class="accordion">ACESSAR O SISTEMA</button>
+<div class="panel">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
         <div class="image">
-          <img src="/src/img2/print 1.png" alt="Tela da Prova"
-            onclick="abrirImagem('/src/img2/print 1.png')">
+          <img src="/src/img2/print 1.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/print 1.png')">
         </div>
         <div class="description">
-          <p>Nessa tela você se cadastra ou faça login de sua conta já criada no Mytempo</p>
+          <p>Nessa tela você se cadastra ou faça login de sua conta já criada no MyTempo.</p>
         </div>
       </div>
-    
-      <div class="carousel-item">
+      <div class="swiper-slide">
         <div class="image">
-          <img src="/src/img2/print 2.png" alt="Tela da Prova"
-            onclick="abrirImagem('/src/img2/print 2.png')">
+          <img src="/src/img2/print 2.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/print 2.png')">
         </div>
         <div class="description">
           <p>Escolha seu perfil de login (staff, assessoria ou franquia) e adicione sua senha de login.</p>
         </div>
       </div>
-    
-      <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
-      <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
   </div>
+</div>
 
-  <button class="accordion">INCLUIR E EDITAR </button>
-  <div class="panel">
-    <div class="carousel">
-
-      <div class="carousel-item">
+<!-- Segundo Painel -->
+<button class="accordion">INCLUIR E EDITAR</button>
+<div class="panel">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
         <div class="image">
-          <img src="/src/img2/área da prova começo.png" alt="Tela da Prova"
-            onclick="abrirImagem('/src/img2/área da prova começo.png')">
+          <img src="/src/img2/área da prova começo.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/área da prova começo.png')">
         </div>
         <div class="description">
-          <p>Nessa tela você tem acesso a tudo referente a prova (inscritos, categorias, percursos, check. cadastrados, etc..).
-            Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar,
-            ferramentas, inscritos e cronometragem)</p>
+          <p>Nessa tela você tem acesso a tudo referente à prova (inscritos, categorias, percursos, check. cadastrados, etc..). Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar, ferramentas, inscritos e cronometragem).</p>
         </div>
       </div>
-    
-      <div class="carousel-item">
+      <div class="swiper-slide">
         <div class="image">
-          <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
-            onclick="abrirImagem('/src/img2/área de edição da prova.png')">
+          <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/área de edição da prova.png')">
         </div>
         <div class="description">
           <p>Local de edição da sua prova, onde você pode editar data, nome, cidade, largada, número de peito, etc..</p>
         </div>
       </div>
-      <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
-      <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
   </div>
+</div>
 
-  <button class="accordion">EXTRAIR RELATÓRIOS DE INSCRITOS KIT</button>
-  <div class="panel">
-    <div class="image">
-      <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
-        onclick="abrirImagem('/src/img2/área de edição da prova.png')">
-    </div>
-    <div class="description">
-      <p>Nessa tela você tem acesso a tudo referente à prova (inscritos, categorias, percursos, check cadastrados, etc).
-      </p>
-      <p>Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar, ferramentas,
-        inscritos e cronometragem).</p>
-    </div>
+<!-- Terceiro Painel -->
+<button class="accordion">EXTRAIR RELATÓRIOS DE INSCRITOS KIT</button>
+<div class="panel">
+  <div class="image">
+    <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/área de edição da prova.png')">
   </div>
+  <div class="description">
+    <p>Nessa tela você tem acesso a tudo referente à prova (inscritos, categorias, percursos, check cadastrados, etc).</p>
+    <p>Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar, ferramentas, inscritos e cronometragem).</p>
+  </div>
+</div>
 
-  <button class="accordion">CERTIFICA ENTREGA DO KIT</button>
-  <div class="panel">
-    <div class="image">
-      <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
-        onclick="abrirImagem('/src/img2/área de edição da prova.png')">
-    </div>
-    <div class="description">
-      <p>Nessa tela você tem acesso a tudo referente à prova (inscritos, categorias, percursos, check cadastrados, etc).
-      </p>
-      <p>Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar, ferramentas,
-        inscritos e cronometragem).</p>
-    </div>
+<!-- Quarto Painel -->
+<button class="accordion">CERTIFICA ENTREGA DO KIT</button>
+<div class="panel">
+  <div class="image">
+    <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova" onclick="abrirImagem('/src/img2/área de edição da prova.png')">
   </div>
+  <div class="description">
+    <p>Nessa tela você tem acesso a tudo referente à prova (inscritos, categorias, percursos, check cadastrados, etc).</p>
+    <p>Parte superior contém todas as ferramentas de edições da prova (importação, cadastrar/associar, ferramentas, inscritos e cronometragem).</p>
+  </div>
+</div>
 
   <div id="modal" class="modal">
     <span class="fechar" onclick="fecharImagem()">&times;</span>
@@ -149,6 +143,7 @@
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/src/js/how.js"></script>
 </body>
 

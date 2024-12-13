@@ -36,26 +36,6 @@ a {
     display: block;
 }
 
-.panel {
-    padding: 0 18px;
-    display: flex;
-    max-height: 0;
-    flex-direction: row;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #0000000e;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: justify;
-    text-justify: inter-word;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.panel.open {
-    max-height: none;
-}
-
 .accordion.active {
     background-color: #00000031;
 }
@@ -71,30 +51,19 @@ a {
     box-sizing: border-box;
 }
 
-.carousel {
-    position: relative;
+.swiper {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
     padding: 20px;
 }
 
-.carousel-item {
-    display: none;
+.swiper-slide {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 100%;
-    opacity: 0;
-    transform: translateX(20px);
-}
-
-.carousel-item.active {
-    display: flex;
-    opacity: 1;
-    transform: translateX(0);
-    animation: slideIn 0.5s ease forwards;
+    justify-content: center;
+    text-align: justify;
 }
 
 .image {
@@ -106,7 +75,6 @@ a {
     width: 100%;
     height: auto;
     max-width: 700px;
-    margin-top: 20px;
     border-radius: 8px;
 }
 
@@ -116,6 +84,7 @@ a {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    padding-left: 20px;
 }
 
 .description .note {
@@ -145,6 +114,47 @@ a {
 
 .carousel-control.next {
     right: -30px;
+}
+
+.panel {
+    padding: 0 18px;
+    display: flex;
+    max-height: 0;
+    flex-direction: row;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #0000000e;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border: 2px solid black;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px;
+    transform: scale(0.8);
+}
+
+
+.panel.open {
+    max-height: none;
 }
 
 .logo11 {
@@ -431,18 +441,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
     .titulo {
         width: 300px;
         text-align: center;
         margin: 150px auto 150px;
     }
 
-    .carousel {
+    .swiper {
         flex-direction: column;
         padding: 10px;
     }
 
-    .carousel-item {
+    .swiper-slide {
         flex-direction: column;
         align-items: center;
     }

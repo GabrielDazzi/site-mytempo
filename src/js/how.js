@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function abrirImagem(src) {
   const modal = document.getElementById('modal');
   const img = document.getElementById('imagem-grande');
-  
+
   img.src = src;
   modal.classList.add('show');  // Adiciona a classe "show" para exibir a modal
   document.body.classList.add('modal-open');
@@ -43,22 +43,14 @@ function fecharImagem() {
   document.body.classList.remove('modal-open');
 }
 
-document.querySelectorAll('.carousel').forEach((carousel) => {
-  let currentIndex = 0;
-  const slides = carousel.querySelectorAll('.carousel-item');
-
-  function changeSlide(direction) {
-    slides[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + direction + slides.length) % slides.length;
-    slides[currentIndex].classList.add('active');
-  }
-
-  // Inicia o primeiro item visível
-  slides[currentIndex].classList.add('active');
-
-  // Adiciona os event listeners para os botões de controle
-  carousel.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
-  carousel.querySelector('.next').addEventListener('click', () => changeSlide(1));
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
 });
 
 
