@@ -109,7 +109,7 @@ a {
 }
 
 .carousel-control.prev {
-    left: -30px;
+    left: 30px;
 }
 
 .carousel-control.next {
@@ -142,6 +142,7 @@ a {
     height: 30px;
     position: absolute; 
     top: 50%; 
+    border-radius: 8px;
     transform: translateY(-50%); 
     border: 2px solid black;
 }
@@ -162,6 +163,9 @@ a {
 }
 
 body {
+    /* background: linear-gradient(90deg, #e1e3ac, #a6b985, #648a64, #46685b, #213435); */
+    /* background: linear-gradient(90deg, #899f8c, #808d81, #747974); */
+    /* background: linear-gradient(90deg, #76a7a6, #3c5f55); */
     background: linear-gradient(90deg, #7695a7, #3c525f);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -399,6 +403,12 @@ h1 {
     border-radius: 10px;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+
 .image-v {
     display: flex; /* Garante que o conteúdo se alinhe corretamente */
     flex-direction: column; /* Certifica-se de que os itens fiquem um abaixo do outro */
@@ -411,7 +421,7 @@ h1 {
 .image-v img {
     width: 30%; /* Limita a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
-    max-width: 550px; /* Limita a largura máxima da imagem */
+    max-width: 1050px; /* Limita a largura máxima da imagem */
     border-radius: 10px; /* Adiciona cantos arredondados */
     display: block; /* Remove espaçamentos extras da imagem */
     margin: 0 auto;
