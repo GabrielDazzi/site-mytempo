@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="/src/img/fav.png">
+  <title>Sistema</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<header>
+  <div>
+    <a href="/how.html">
+      <span class="arrow"></span>
+    </a>
+  </div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="/index.html">Início</a></li>
+      <li><a href="/index.html#sobre">Sobre</a></li>
+      <li><a href="/index.html#servicos">Serviços</a></li>
+      <li><a href="/index.html#tutorial">Tutorial</a></li>
+      <li><a href="/index.html#contact">Contato</a></li>
+      <li><a href="https://mytempo.esp.br/">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div class="titulo">
+    <h1>Lorem ipsum</h1>
+    <p class="p-titulos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi omnis officiis, </p>
+  </div>
+
+  <!-- Botão para abrir o painel -->
+  <button class="accordion">App</button>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="src/img/APP PAGINA 1.png" alt="Tela da Prova" onclick="abrirImagem('src/img/APP PAGINA 1.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-v">
+            <img src="src/img/APP PAGINA 2.png" alt="Tela da Prova" onclick="abrirImagemHorizontal('src/img/APP PAGINA 2.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de navegação do Swiper -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <button class="accordion">Camera</button>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área da prova começo.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área da prova começo.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área de edição da prova.png')">
+          </div>
+          <div class="description">
+            <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <button class="accordion">Gps</button>
+  <!-- Primeiro painel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área da prova começo.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área da prova começo.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área de edição da prova.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Segundo painel -->
+  <button class="accordion">Rfid</button>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área da prova começo.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área da prova começo.png')">
+          </div>
+          <div class="description">
+            <p>NLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image">
+            <img src="/src/img2/área de edição da prova.png" alt="Tela da Prova"
+              onclick="abrirImagem('/src/img2/área de edição da prova.png')">
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab nulla natus nesciunt deserunt numquam enim minus necessitatibus ullam in labore illo, laboriosam ad blanditiis laborum itaque est maxime! Hic?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="fechar" onclick="fecharImagem()">&times;</span>
+    <img class="imagem-grande" id="imagem-grande" src="">
+  </div>
+  
+  <div id="modal-horizontal" class="modal horizontal-modal">
+    <span class="fechar" onclick="fecharImagemHorizontal()">&times;</span>
+    <img class="imagem-horizontal" id="imagem-horizontal" src="">
+</div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-copyright">
+        <p>&copy; 2024 MyTempo. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-d">
+        <h2 class="footer-t">Informações de Contato</h2>
+        <p class="footer-p">Email: contato@meusite.com</p>
+        <p class="footer-p">Telefone: (00) 1234-5678</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+
+</html>
