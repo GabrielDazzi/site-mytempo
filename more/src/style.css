@@ -31,7 +31,7 @@ a {
     text-align: center;
     font-size: 18px;
     transition: 0.4s;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: block;
 }
@@ -53,7 +53,7 @@ a {
 
 .swiper {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -66,16 +66,13 @@ a {
     text-align: justify;
 }
 
-.image {
-    flex: 1;
-    padding-right: 20px;
-}
 
 .image img {
     width: 100%;
     height: auto;
     max-width: 700px;
     border-radius: 8px;
+    max-height: none;
 }
 
 .description {
@@ -108,14 +105,6 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.carousel-control.prev {
-    left: 30px;
-}
-
-.carousel-control.next {
-    right: -30px;
-}
-
 .panel {
     padding: 0 18px;
     display: flex;
@@ -134,17 +123,16 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #000000;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30px;
     height: 30px;
     position: absolute; 
-    top: 50%; 
+    top: 50%;
     border-radius: 8px;
     transform: translateY(-50%); 
-    border: 2px solid black;
 }
 
 .swiper-button-prev::after,
