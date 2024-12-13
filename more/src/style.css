@@ -36,10 +36,6 @@ a {
     display: block;
 }
 
-.accordion.active {
-    background-color: #00000031;
-}
-
 /* ::selection {
     color: white;
     background-color: #da0000;
