@@ -43,15 +43,21 @@ function fecharImagem() {
   document.body.classList.remove('modal-open');
 }
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true,
-});
+document.querySelectorAll('.mySwiper').forEach(swiperEl => {
+    new Swiper(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+    });
+  });
 
 function abrirImagemHorizontal(src) {
     const modalHorizontal = document.getElementById("modal-horizontal");

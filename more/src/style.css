@@ -47,6 +47,17 @@ a {
     box-sizing: border-box;
 }
 
+
+.swiper-pagination-bullet {
+    background-color: #cccccc; 
+    opacity: 1; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #243138; 
+}
+
+
 .swiper {
     width: 100%;
     max-width: 1350px;
