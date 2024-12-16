@@ -45,17 +45,19 @@ function fecharImagem() {
 
 document.querySelectorAll('.mySwiper').forEach(swiperEl => {
   new Swiper(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+      },
+      mousewheel: true,
+      rewind: true,
   });
 });
 
