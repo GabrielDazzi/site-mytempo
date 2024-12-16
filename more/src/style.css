@@ -2,10 +2,8 @@ a {
     text-decoration: none;
 }
 
-.strong-1 {
-    font-size: 20px;
-    color: #fdfdfd;
-    font-weight: bolder;
+strong {
+color: #acd6d1;
 }
 
 .arrow {
@@ -402,7 +400,7 @@ h1 {
 }
 
 .titulo {
-    margin: 100px auto 100px;
+    margin: 100px auto 80px;
     width: 500px;
     text-align: center;
 }
