@@ -557,6 +557,11 @@ footer {
         padding: 10px;
     }
 
+    .swiper-pagination-bullet {
+        position: relative;
+        top: 5px;
+    }
+
     .swiper-slide {
         flex-direction: column;
         align-items: center;
