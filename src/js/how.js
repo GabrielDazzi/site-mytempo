@@ -56,7 +56,6 @@ document.querySelectorAll('.mySwiper').forEach(swiperEl => {
           clickable: true,
           dynamicBullets: true,
       },
-      mousewheel: true,
       rewind: true,
   });
 });
