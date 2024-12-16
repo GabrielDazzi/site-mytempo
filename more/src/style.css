@@ -181,7 +181,7 @@ header {
     width: 100%;
     height: 70px;
     padding: 0 20px;
-    z-index: 1000;
+    z-index: 1;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -207,7 +207,7 @@ nav {
 
 .modal {
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
     left: 0;
     top: 0;
     width: 100%;
