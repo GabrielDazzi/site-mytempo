@@ -48,12 +48,12 @@ a {
 
 
 .swiper-pagination-bullet {
-    background-color: #cccccc; 
-    opacity: 1; 
+    background-color: #cccccc;
+    opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #243138; 
+    background-color: #243138;
 }
 
 
@@ -135,10 +135,10 @@ a {
     justify-content: center;
     width: 30px;
     height: 30px;
-    position: absolute; 
+    position: absolute;
     top: 50%;
     border-radius: 8px;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 .swiper-button-prev::after,
@@ -210,7 +210,8 @@ nav {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Permite scroll */
+    overflow: auto;
+    /* Permite scroll */
     background-color: #173857d3;
     opacity: 0;
     visibility: hidden;
@@ -227,10 +228,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto; /* Ajusta o posicionamento da imagem */
-    width: auto; /* Garante largura dinâmica */
-    max-width: 80%; /* Limita a largura */
-    max-height: none; /* Permite que a altura não seja limitada */
+    margin: 100px auto;
+    /* Ajusta o posicionamento da imagem */
+    width: auto;
+    /* Garante largura dinâmica */
+    max-width: 80%;
+    /* Limita a largura */
+    max-height: none;
+    /* Permite que a altura não seja limitada */
     transform: scale(0.9);
     transition: transform 0.3s ease;
 }
@@ -268,13 +273,16 @@ body.modal-open {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Permite scroll, se necessário */
+    overflow: auto;
+    /* Permite scroll, se necessário */
     background-color: rgba(23, 56, 87, 0.83);
     opacity: 0;
     visibility: hidden;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
     transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
@@ -285,18 +293,24 @@ body.modal-open {
 
 .imagem-container {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
-    box-sizing: border-box; /* Inclui padding nos limites */
+    box-sizing: border-box;
+    /* Inclui padding nos limites */
 }
 
 .imagem-horizontal {
-    max-width: 100%; /* Limita a largura ao tamanho da tela */
-    max-height: 100%; /* Limita a altura ao tamanho da tela */
-    object-fit: contain; /* Garante que a imagem mantenha as proporções */
+    max-width: 100%;
+    /* Limita a largura ao tamanho da tela */
+    max-height: 100%;
+    /* Limita a altura ao tamanho da tela */
+    object-fit: contain;
+    /* Garante que a imagem mantenha as proporções */
     margin-left: 600px;
 }
 
@@ -400,24 +414,35 @@ h1 {
 h2 {
     text-align: center;
     margin-bottom: 25px;
-  }
-  
+}
+
 
 .image-v {
-    display: flex; /* Garante que o conteúdo se alinhe corretamente */
-    flex-direction: column; /* Certifica-se de que os itens fiquem um abaixo do outro */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    max-width: 100%; /* Limita o tamanho total do contêiner */
-    overflow: hidden; /* Impede que a imagem ou conteúdo "escape" do contêiner */
+    display: flex;
+    /* Garante que o conteúdo se alinhe corretamente */
+    flex-direction: column;
+    /* Certifica-se de que os itens fiquem um abaixo do outro */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    max-width: 100%;
+    /* Limita o tamanho total do contêiner */
+    overflow: hidden;
+    /* Impede que a imagem ou conteúdo "escape" do contêiner */
 }
 
 .image-v img {
-    width: 30%; /* Limita a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 1050px; /* Limita a largura máxima da imagem */
-    border-radius: 10px; /* Adiciona cantos arredondados */
-    display: block; /* Remove espaçamentos extras da imagem */
+    width: 30%;
+    /* Limita a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    max-width: 1050px;
+    /* Limita a largura máxima da imagem */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados */
+    display: block;
+    /* Remove espaçamentos extras da imagem */
     margin: 0 auto;
 }
 
@@ -506,9 +531,12 @@ footer {
 @media (max-width: 768px) {
 
     .imagem-horizontal {
-        max-width: 100%; /* Limita a largura ao tamanho da tela */
-        max-height: 100%; /* Limita a altura ao tamanho da tela */
-        object-fit: contain; /* Garante que a imagem mantenha as proporções */
+        max-width: 100%;
+        /* Limita a largura ao tamanho da tela */
+        max-height: 100%;
+        /* Limita a altura ao tamanho da tela */
+        object-fit: contain;
+        /* Garante que a imagem mantenha as proporções */
         margin-left: 10px;
         margin-top: 50px;
     }
