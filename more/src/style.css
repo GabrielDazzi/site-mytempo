@@ -72,7 +72,6 @@ a {
     text-align: justify;
 }
 
-
 .image img {
     width: 100%;
     height: auto;
@@ -85,14 +84,14 @@ a {
     flex: 1;
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px !important;
     line-height: 1.5;
     padding-left: 20px;
 }
 
 .description .note {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
