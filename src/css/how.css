@@ -173,9 +173,11 @@ body {
 
 header {
     color: #fff;
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -346,7 +348,7 @@ h1 {
 }
 
 .titulo {
-    margin: 300px auto 300px;
+    margin: 100px auto 100px;
     width: 500px;
     text-align: center;
 }
