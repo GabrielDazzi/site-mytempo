@@ -54,10 +54,13 @@ document.querySelectorAll('.mySwiper').forEach(swiperEl => {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            dynamicBullets: true,
         },
-        loop: true,
+        mousewheel: true,
+        rewind: true,
     });
 });
+
 
 function abrirImagemHorizontal(src) {
     const modalHorizontal = document.getElementById("modal-horizontal");
