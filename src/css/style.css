@@ -558,7 +558,7 @@ button {
     max-width: 600px;
     border-radius: 10px;
     text-align: center;
-    margin: 0 auto;
+    margin: 100px auto;
     background-color: #ffffff;
     margin-bottom: 100px;
     box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.1);

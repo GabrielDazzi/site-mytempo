@@ -157,7 +157,8 @@ body {
     /* background: linear-gradient(90deg, #e1e3ac, #a6b985, #648a64, #46685b, #213435); */
     /* background: linear-gradient(90deg, #899f8c, #808d81, #747974); */
     /* background: linear-gradient(90deg, #76a7a6, #3c5f55); */
-    background: linear-gradient(90deg, #7695a7, #3c525f);
+    /* background: linear-gradient(90deg, #7695a7, #3c525f); */
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
     color: white;
     font-family: 'Poppins', sans-serif;
     user-select: none;
@@ -169,7 +170,8 @@ body {
 
 header {
     color: #fff;
-    background: linear-gradient(90deg, #7695a7, #3c525f);
+    background: linear-gradient(90deg, #3C8DBC, #2d6688);
+    /* background: linear-gradient(90deg, #7695a7, #3c525f); */
     display: flex;
     align-items: center;
     justify-content: flex-end;
