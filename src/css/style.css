@@ -120,8 +120,8 @@ nav ul li a:hover {
 
 .hero {
     height: 101vh;
-    /* display: flex;
-    flex-direction: column;
+    display: flex;
+    /* flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -130,6 +130,10 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero-text {
+    display: none;
 }
 
 .hero h1 {
@@ -661,6 +665,26 @@ footer {
         transform: translateY(0);
     }
 
+}
+
+@media (min-aspect-ratio: 2/1) {
+    .hero-text {
+        display: contents;
+    }    
+    
+    .hero {
+        height: 101vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        background-image: url(../img2/bkuw.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 @media (max-width: 1024px) {
