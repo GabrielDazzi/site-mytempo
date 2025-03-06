@@ -50,8 +50,6 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/*Ana, te amo meu amor*/
-
 header div {
     display: flex;
     align-items: center;
@@ -661,6 +659,8 @@ footer {
     }
 
 }
+
+/*Ana, te amo meu amor*/
 
 @keyframes slideIn {
 
