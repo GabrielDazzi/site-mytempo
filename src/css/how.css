@@ -510,7 +510,7 @@ footer {
     }
 
     .nav-active {
-        height: 40%;
+        height: 400%;
         opacity: 1;
         visibility: visible;
         transition: height 0.5s ease, opacity 0.5s ease, visibility 0.5s;
