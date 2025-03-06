@@ -40,6 +40,10 @@ a {
     background-color: #0000001a;
 }
 
+.accordion:hover {
+    background-color: #0000001a;
+}
+
 /* ::selection {
     color: white;
     background-color: #da0000;
