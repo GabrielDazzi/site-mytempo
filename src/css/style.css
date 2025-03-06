@@ -779,7 +779,7 @@ footer {
     }
 
     header {
-        height: 70px;
+        height: 60px;
         padding: 0 10px;
     }
 
@@ -844,6 +844,7 @@ footer {
         justify-content: space-around;
         opacity: 1;
         transition: opacity 0.3s ease;
+        top: 12.5px;
     }
 
     .hero h1 {
@@ -882,6 +883,7 @@ footer {
     .logo11 {
         height: 35px;
         margin-right: 30px;
+        left: 20px;
     }
 
     .ul-map {
