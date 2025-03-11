@@ -15,6 +15,9 @@
     transition: opacity 0.5s ease-in-out;
 }
 
+.cor2 {
+    color: #5094bb;
+}
 
 .fade-in.show {
     opacity: 1;
