@@ -3,6 +3,10 @@
     background-color: #3C8DBC;
 } */
 
+a {
+    color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -275,7 +279,7 @@ button {
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     background-size: cover;
-    margin: 40px 150px;
+    margin: 0px 150px;
     border-radius: 10px;
 }
 
