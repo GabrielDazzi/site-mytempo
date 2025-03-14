@@ -129,7 +129,7 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.info {
+.info, .info2, .info3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,7 +146,7 @@ nav ul li a:hover {
     width: 50%;
 }
 
-.info img {
+.info img, .info2 img, .info3 img {
     width: 40%;
     max-width: 400px;
 }
