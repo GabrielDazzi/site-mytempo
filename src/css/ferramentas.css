@@ -16,7 +16,7 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    padding: 20px;
+    padding-top: 50px
 }
 
 header {
@@ -108,6 +108,77 @@ nav ul li a:hover {
 
 .hamburger.toggle span:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.login {
+    background: #3C8DBC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #4d83a2;
+    color: white;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: rgb(202, 142, 142);
+}
+
+.img1 {
+    height: 500px;
+    background-color: rgb(170, 164, 208);
+}
+
+.info .text {
+    width: 50%;
+}
+
+.info img {
+    width: 40%;
+    max-width: 400px;
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.features {
+    text-align: center;
+    padding: 40px;
+    background: #626262;
+}
+
+.features ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.features li {
+    font-size: 18px;
+    margin: 10px 20px;
+    text-align: center;
 }
 
 footer {
